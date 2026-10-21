@@ -22,6 +22,9 @@ RestartSec=5
 # /run/datapilot-sandbox is created owned by dpsandbox:dpsandbox, mode 0750; the socket is 0660
 RuntimeDirectory=datapilot-sandbox
 RuntimeDirectoryMode=0750
+# Keep the directory across restarts: the live container bind-mounts it, and a deleted-and-recreated
+# directory would leave the container pointing at the old (empty) one.
+RuntimeDirectoryPreserve=yes
 
 # Hardening that does not interfere with talking to Docker
 NoNewPrivileges=true
