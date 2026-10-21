@@ -1,0 +1,160 @@
+[
+  {
+    "run_id": "s1bbaf792-r1",
+    "sequence": 1,
+    "question": "Which category had the biggest revenue drop in September vs August, and which region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "approved",
+    "parent_run_id": null,
+    "context_run_ids": [],
+    "messages": 4,
+    "input_tokens": 1550,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 390,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 530,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 630,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "b8fc267c1d8949b9a7a46fe633c154fe"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "b8fc267c1d8949b9a7a46fe633c154fe"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "b8fc267c1d8949b9a7a46fe633c154fe"
+      }
+    ],
+    "artifact_digest": "5dc4f39e8d41e0563e55baf0aa63c78af35ab4c6e4fcfad4851ba647aa7de43b"
+  },
+  {
+    "run_id": "s1bbaf792-r2",
+    "sequence": 2,
+    "question": "And how does that compare for the South region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "approved",
+    "parent_run_id": "s1bbaf792-r1",
+    "context_run_ids": [
+      "s1bbaf792-r1"
+    ],
+    "messages": 4,
+    "input_tokens": 1793,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 471,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 611,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 711,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "231385e62f5749b0a3ae48737c140d5f"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "231385e62f5749b0a3ae48737c140d5f"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "231385e62f5749b0a3ae48737c140d5f"
+      }
+    ],
+    "artifact_digest": "cd466fe818227643000575733e045df9d56119a7e9939bf510f79963f4c3b901"
+  },
+  {
+    "run_id": "s1bbaf792-r3",
+    "sequence": 3,
+    "question": "Which category had the biggest revenue drop in September vs August, and which region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "none",
+    "parent_run_id": null,
+    "context_run_ids": [
+      "s1bbaf792-r1",
+      "s1bbaf792-r2"
+    ],
+    "messages": 4,
+    "input_tokens": 2006,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 542,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 682,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 782,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "e24e89e28ce84a669777bb31d919b184"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "e24e89e28ce84a669777bb31d919b184"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "e24e89e28ce84a669777bb31d919b184"
+      }
+    ],
+    "artifact_digest": "dc80e6b5e92333024eaa5e124e8c651cdecd104cdcd1ef6695db08fede8c427e"
+  }
+]

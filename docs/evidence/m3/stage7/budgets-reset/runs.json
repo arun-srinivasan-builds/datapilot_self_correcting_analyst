@@ -1,0 +1,173 @@
+[
+  {
+    "run_id": "s7dcaaf33-r1",
+    "sequence": 1,
+    "question": "Which category had the biggest revenue drop in September vs August, and which region?",
+    "outcome": "LIMIT_REACHED",
+    "reviewer_approved": false,
+    "human": "none",
+    "parent_run_id": null,
+    "context_run_ids": [],
+    "messages": 12,
+    "input_tokens": 4305,
+    "output_tokens": 139,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 390,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 3915,
+        "output_tokens": 108,
+        "calls": 6
+      }
+    },
+    "exec_ids": [
+      "3879e91daf00408aab48485d6101f0f1",
+      "d8b6b2760303435d82cc3440881a553b",
+      "c2fa1e8833e24811a89a2644b60ba77c",
+      "4abb98370e9f4736a977ba7ef17c7712",
+      "8224502cb8154bc3a808b903c76d4cbb"
+    ],
+    "code_hashes": [
+      "a0ce5c839381",
+      "a0ce5c839381",
+      "a0ce5c839381",
+      "a0ce5c839381",
+      "a0ce5c839381"
+    ],
+    "artifacts": [],
+    "artifact_digest": "5e1be7f9949b3ead70bf074ef0de2ba4596730f314c4b6c759a87d6ef56010f2"
+  },
+  {
+    "run_id": "s7dcaaf33-r2",
+    "sequence": 2,
+    "question": "And how does that compare for the South region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "none",
+    "parent_run_id": "s7dcaaf33-r1",
+    "context_run_ids": [],
+    "messages": 4,
+    "input_tokens": 1535,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 385,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 525,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 625,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "f8ca9ebce3974de4bc4a159674b0cc0e"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "f8ca9ebce3974de4bc4a159674b0cc0e"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "f8ca9ebce3974de4bc4a159674b0cc0e"
+      }
+    ],
+    "artifact_digest": "343273121e46cde91f75be0270136c2f84aaad30ccf78314df3ffa0b3d0efc06"
+  },
+  {
+    "run_id": "s7dcaaf33-r3",
+    "sequence": 3,
+    "question": "And how does that compare for the South region?",
+    "outcome": "TOKEN_BUDGET_EXHAUSTED",
+    "reviewer_approved": false,
+    "human": "none",
+    "parent_run_id": null,
+    "context_run_ids": [
+      "s7dcaaf33-r2"
+    ],
+    "messages": 1,
+    "input_tokens": 466,
+    "output_tokens": 31,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 466,
+        "output_tokens": 31,
+        "calls": 1
+      }
+    },
+    "exec_ids": [],
+    "code_hashes": [],
+    "artifacts": [],
+    "artifact_digest": "64e36acae13a6ae1fb9b492bb62530fe9dc01a8ef0b06ef4a17a7148e7591eb2"
+  },
+  {
+    "run_id": "s7dcaaf33-r4",
+    "sequence": 4,
+    "question": "And how does that compare for the South region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "none",
+    "parent_run_id": null,
+    "context_run_ids": [
+      "s7dcaaf33-r2"
+    ],
+    "messages": 4,
+    "input_tokens": 1778,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 466,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 606,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 706,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "8ce6d936d2c548749ed3090b722db77b"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "8ce6d936d2c548749ed3090b722db77b"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "8ce6d936d2c548749ed3090b722db77b"
+      }
+    ],
+    "artifact_digest": "40271865da60adf7ae7515110580115ebd0e13c26f44e7438cbcd2f0916e2870"
+  }
+]

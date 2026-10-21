@@ -1,0 +1,89 @@
+{
+  "session_id": "1bbaf792",
+  "decisions": [
+    {
+      "session_id": "1bbaf792",
+      "run_id": "s1bbaf792-r1",
+      "decision": "approved",
+      "at": "2026-10-21T05:49:37+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "reason": "",
+      "artifact_digest": "5dc4f39e8d41e0563e55baf0aa63c78af35ab4c6e4fcfad4851ba647aa7de43b",
+      "artifacts": [
+        {
+          "name": "category_change.png",
+          "size": 18489,
+          "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+          "exec_id": "b8fc267c1d8949b9a7a46fe633c154fe"
+        },
+        {
+          "name": "results.json",
+          "size": 458,
+          "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+          "exec_id": "b8fc267c1d8949b9a7a46fe633c154fe"
+        }
+      ],
+      "code_hash": "932b0bb16496",
+      "results_sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d"
+    },
+    {
+      "session_id": "1bbaf792",
+      "run_id": "s1bbaf792-r2",
+      "decision": "approved",
+      "at": "2026-10-21T05:49:46+00:00",
+      "actor": {
+        "kind": "named_person",
+        "identifier": "operator-7",
+        "verified": false
+      },
+      "reason": "",
+      "artifact_digest": "cd466fe818227643000575733e045df9d56119a7e9939bf510f79963f4c3b901",
+      "artifacts": [
+        {
+          "name": "category_change.png",
+          "size": 18489,
+          "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+          "exec_id": "231385e62f5749b0a3ae48737c140d5f"
+        },
+        {
+          "name": "results.json",
+          "size": 458,
+          "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+          "exec_id": "231385e62f5749b0a3ae48737c140d5f"
+        }
+      ],
+      "code_hash": "932b0bb16496",
+      "results_sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d"
+    }
+  ],
+  "attempts": [
+    {
+      "kind": "approved",
+      "run_id": "s1bbaf792-r1",
+      "at": "2026-10-21T05:49:37+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "recorded",
+      "code": ""
+    },
+    {
+      "kind": "approved",
+      "run_id": "s1bbaf792-r2",
+      "at": "2026-10-21T05:49:46+00:00",
+      "actor": {
+        "kind": "named_person",
+        "identifier": "operator-7",
+        "verified": false
+      },
+      "result": "recorded",
+      "code": ""
+    }
+  ]
+}

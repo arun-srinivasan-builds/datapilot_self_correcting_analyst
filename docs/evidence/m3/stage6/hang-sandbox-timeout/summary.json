@@ -1,0 +1,84 @@
+{
+  "scenario": "hang-sandbox-timeout",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "REVIEWER_APPROVED",
+  "speaker_order": "PCECER",
+  "agent_messages": 6,
+  "phase": "approved",
+  "repair_attempts": 1,
+  "feedback_rounds": 0,
+  "reviewer_verified": true,
+  "human": "none",
+  "containers_created": 2,
+  "executions": [
+    {
+      "status": "timeout",
+      "exit_code": 124,
+      "duration_ms": 11016,
+      "stderr_head": "[sandbox] wall-clock limit reached; execution killed",
+      "artifacts": []
+    },
+    {
+      "status": "ok",
+      "exit_code": 0,
+      "duration_ms": 6202,
+      "stderr_head": "",
+      "artifacts": [
+        "category_change.png",
+        "results.json"
+      ]
+    }
+  ],
+  "code_hashes": [
+    "903637eed2a8",
+    "932b0bb16496"
+  ],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 1242,
+      "output_tokens": 296,
+      "calls": 2
+    },
+    "Reviewer": {
+      "input_tokens": 812,
+      "output_tokens": 13,
+      "calls": 1
+    }
+  },
+  "total_tokens": 2784,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "test_fault_injected",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "reviewer_approved",
+    "terminated"
+  ]
+}

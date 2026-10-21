@@ -1,0 +1,151 @@
+[
+  {
+    "run_id": "se22c61ce-r1",
+    "sequence": 1,
+    "question": "Which category had the biggest revenue drop in September vs August, and which region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "approved",
+    "parent_run_id": null,
+    "context_run_ids": [],
+    "messages": 4,
+    "input_tokens": 1550,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 390,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 530,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 630,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "549dc6022f07424c97022410edea326e"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "549dc6022f07424c97022410edea326e"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "549dc6022f07424c97022410edea326e"
+      }
+    ],
+    "artifact_digest": "1383ed2c8d2bce10a653529d91fc7be185dd81cc5c26467624f3a98115dca541"
+  },
+  {
+    "run_id": "se22c61ce-r2",
+    "sequence": 2,
+    "question": "And how does that compare for the South region?",
+    "outcome": "LIMIT_REACHED",
+    "reviewer_approved": false,
+    "human": "none",
+    "parent_run_id": "se22c61ce-r1",
+    "context_run_ids": [
+      "se22c61ce-r1"
+    ],
+    "messages": 12,
+    "input_tokens": 4872,
+    "output_tokens": 139,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 471,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 4401,
+        "output_tokens": 108,
+        "calls": 6
+      }
+    },
+    "exec_ids": [
+      "754444d68b8544069565be5ef60daecc",
+      "15d7494f048e43a08e41f4e6d2c0f3ec",
+      "21f6a01b2f9d4df296f4af32c45b6371",
+      "4b7eeedc85da4d7388a16089b272f50a",
+      "1a5217aa9ffa4496868436e52c10ff20"
+    ],
+    "code_hashes": [
+      "a0ce5c839381",
+      "a0ce5c839381",
+      "a0ce5c839381",
+      "a0ce5c839381",
+      "a0ce5c839381"
+    ],
+    "artifacts": [],
+    "artifact_digest": "4fb8099e094ea9b603ec52136cd53d1ef7cea19e9ac4cee1497eaddb996378bc"
+  },
+  {
+    "run_id": "se22c61ce-r3",
+    "sequence": 3,
+    "question": "And how does that compare for the South region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "rejected",
+    "parent_run_id": null,
+    "context_run_ids": [
+      "se22c61ce-r1"
+    ],
+    "messages": 7,
+    "input_tokens": 3467,
+    "output_tokens": 354,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 471,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 1398,
+        "output_tokens": 296,
+        "calls": 2
+      },
+      "Reviewer": {
+        "input_tokens": 1598,
+        "output_tokens": 27,
+        "calls": 2
+      }
+    },
+    "exec_ids": [
+      "a7e0d8b1ad9e4a2284b73e3b9774bb0d",
+      "76d40054c2134ad6a4dd15681b35d7dd"
+    ],
+    "code_hashes": [
+      "932b0bb16496",
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "76d40054c2134ad6a4dd15681b35d7dd"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "76d40054c2134ad6a4dd15681b35d7dd"
+      }
+    ],
+    "artifact_digest": "1466543551d210a49b511d5f13733801ea8187c22ccccb5f8fa807b56a1435a6"
+  }
+]

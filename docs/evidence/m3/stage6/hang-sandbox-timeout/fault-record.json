@@ -1,0 +1,43 @@
+{
+  "scenario": "hang-sandbox-timeout",
+  "fault": {
+    "fault": "hang",
+    "description": "Coder's code mutated: an endless loop inserted after the imports (never terminates)",
+    "injections": [
+      {
+        "occurrence": 1,
+        "original_hash": "932b0bb16496",
+        "mutated_hash": "903637eed2a8",
+        "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -1,4 +1,6 @@\n import json, os\n+while True:\n+    pass\n import pandas as pd\n import matplotlib\n matplotlib.use(\"Agg\")"
+      }
+    ]
+  },
+  "fault_event_seqs": [
+    7
+  ],
+  "executions": [
+    {
+      "broker_exec_id": "05f4757cb82547b4bb3aafd9cc221961",
+      "code_hash": "903637eed2a8",
+      "injected_fault": "hang",
+      "status": "timeout",
+      "exit_code": 124,
+      "stderr_tail": "[sandbox] wall-clock limit reached; execution killed",
+      "duration_ms": 11016,
+      "exec_started_seq": 11,
+      "exec_result_seq": 12
+    },
+    {
+      "broker_exec_id": "33b6700109a946ebb8db40b2784c0d24",
+      "code_hash": "932b0bb16496",
+      "injected_fault": null,
+      "status": "ok",
+      "exit_code": 0,
+      "stderr_tail": "",
+      "duration_ms": 6202,
+      "exec_started_seq": 20,
+      "exec_result_seq": 21
+    }
+  ],
+  "outcome": "REVIEWER_APPROVED"
+}

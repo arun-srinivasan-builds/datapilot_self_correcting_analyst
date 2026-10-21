@@ -1,0 +1,104 @@
+{
+  "scenario": "limit-12",
+  "fault": {
+    "fault": "missing_column",
+    "description": "Coder's code mutated: column reference 'units' renamed to 'qty' (raises KeyError)",
+    "injections": [
+      {
+        "occurrence": 1,
+        "original_hash": "932b0bb16496",
+        "mutated_hash": "e139383e2bbc",
+        "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -5,7 +5,7 @@\n import matplotlib.pyplot as plt\n \n df = pd.read_csv(os.environ[\"DATA_PATH\"], parse_dates=[\"order_date\"])\n-df[\"revenue\"] = df[\"units\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n+df[\"revenue\"] = df[\"qty\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n df[\"month\"] = df[\"order_date\"].dt.strftime(\"%Y-%m\")\n by_cat = df.pivot_table(index=\"category\", columns=\"month\", values=\"revenue\", aggfunc=\"sum\")\n change = (by_cat[\"2026-09\"] - by_cat[\"2026-08\"]).sort_values()"
+      },
+      {
+        "occurrence": 2,
+        "original_hash": "932b0bb16496",
+        "mutated_hash": "e139383e2bbc",
+        "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -5,7 +5,7 @@\n import matplotlib.pyplot as plt\n \n df = pd.read_csv(os.environ[\"DATA_PATH\"], parse_dates=[\"order_date\"])\n-df[\"revenue\"] = df[\"units\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n+df[\"revenue\"] = df[\"qty\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n df[\"month\"] = df[\"order_date\"].dt.strftime(\"%Y-%m\")\n by_cat = df.pivot_table(index=\"category\", columns=\"month\", values=\"revenue\", aggfunc=\"sum\")\n change = (by_cat[\"2026-09\"] - by_cat[\"2026-08\"]).sort_values()"
+      },
+      {
+        "occurrence": 3,
+        "original_hash": "932b0bb16496",
+        "mutated_hash": "e139383e2bbc",
+        "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -5,7 +5,7 @@\n import matplotlib.pyplot as plt\n \n df = pd.read_csv(os.environ[\"DATA_PATH\"], parse_dates=[\"order_date\"])\n-df[\"revenue\"] = df[\"units\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n+df[\"revenue\"] = df[\"qty\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n df[\"month\"] = df[\"order_date\"].dt.strftime(\"%Y-%m\")\n by_cat = df.pivot_table(index=\"category\", columns=\"month\", values=\"revenue\", aggfunc=\"sum\")\n change = (by_cat[\"2026-09\"] - by_cat[\"2026-08\"]).sort_values()"
+      },
+      {
+        "occurrence": 4,
+        "original_hash": "932b0bb16496",
+        "mutated_hash": "e139383e2bbc",
+        "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -5,7 +5,7 @@\n import matplotlib.pyplot as plt\n \n df = pd.read_csv(os.environ[\"DATA_PATH\"], parse_dates=[\"order_date\"])\n-df[\"revenue\"] = df[\"units\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n+df[\"revenue\"] = df[\"qty\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n df[\"month\"] = df[\"order_date\"].dt.strftime(\"%Y-%m\")\n by_cat = df.pivot_table(index=\"category\", columns=\"month\", values=\"revenue\", aggfunc=\"sum\")\n change = (by_cat[\"2026-09\"] - by_cat[\"2026-08\"]).sort_values()"
+      },
+      {
+        "occurrence": 5,
+        "original_hash": "932b0bb16496",
+        "mutated_hash": "e139383e2bbc",
+        "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -5,7 +5,7 @@\n import matplotlib.pyplot as plt\n \n df = pd.read_csv(os.environ[\"DATA_PATH\"], parse_dates=[\"order_date\"])\n-df[\"revenue\"] = df[\"units\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n+df[\"revenue\"] = df[\"qty\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n df[\"month\"] = df[\"order_date\"].dt.strftime(\"%Y-%m\")\n by_cat = df.pivot_table(index=\"category\", columns=\"month\", values=\"revenue\", aggfunc=\"sum\")\n change = (by_cat[\"2026-09\"] - by_cat[\"2026-08\"]).sort_values()"
+      }
+    ]
+  },
+  "fault_event_seqs": [
+    7,
+    17,
+    27,
+    37,
+    47
+  ],
+  "executions": [
+    {
+      "broker_exec_id": "d8e2e5050bca47899c70446aa0148e38",
+      "code_hash": "e139383e2bbc",
+      "injected_fault": "missing_column",
+      "status": "error",
+      "exit_code": 1,
+      "stderr_tail": "  File \"/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py\", line 3648, in get_loc\n    raise KeyError(key) from err\nKeyError: 'qty'",
+      "duration_ms": 5609,
+      "exec_started_seq": 11,
+      "exec_result_seq": 12
+    },
+    {
+      "broker_exec_id": "cc7e09a62bff49819d882b4cd147456b",
+      "code_hash": "e139383e2bbc",
+      "injected_fault": "missing_column",
+      "status": "error",
+      "exit_code": 1,
+      "stderr_tail": "  File \"/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py\", line 3648, in get_loc\n    raise KeyError(key) from err\nKeyError: 'qty'",
+      "duration_ms": 6250,
+      "exec_started_seq": 21,
+      "exec_result_seq": 22
+    },
+    {
+      "broker_exec_id": "0c42ba7d5aaf4b928548eb2acb684252",
+      "code_hash": "e139383e2bbc",
+      "injected_fault": "missing_column",
+      "status": "error",
+      "exit_code": 1,
+      "stderr_tail": "  File \"/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py\", line 3648, in get_loc\n    raise KeyError(key) from err\nKeyError: 'qty'",
+      "duration_ms": 7000,
+      "exec_started_seq": 31,
+      "exec_result_seq": 32
+    },
+    {
+      "broker_exec_id": "f30be593aea4418cbc07c0aeb7a189bb",
+      "code_hash": "e139383e2bbc",
+      "injected_fault": "missing_column",
+      "status": "error",
+      "exit_code": 1,
+      "stderr_tail": "  File \"/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py\", line 3648, in get_loc\n    raise KeyError(key) from err\nKeyError: 'qty'",
+      "duration_ms": 9217,
+      "exec_started_seq": 41,
+      "exec_result_seq": 42
+    },
+    {
+      "broker_exec_id": "d3d8375ee1894f7990c3dae2e1bac279",
+      "code_hash": "e139383e2bbc",
+      "injected_fault": "missing_column",
+      "status": "error",
+      "exit_code": 1,
+      "stderr_tail": "  File \"/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py\", line 3648, in get_loc\n    raise KeyError(key) from err\nKeyError: 'qty'",
+      "duration_ms": 5922,
+      "exec_started_seq": 51,
+      "exec_result_seq": 52
+    }
+  ],
+  "outcome": "LIMIT_REACHED"
+}

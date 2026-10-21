@@ -1,0 +1,106 @@
+[
+  {
+    "run_id": "s780cbc91-r1",
+    "sequence": 1,
+    "question": "Which category had the biggest revenue drop in September vs August, and which region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "none",
+    "parent_run_id": null,
+    "context_run_ids": [],
+    "messages": 4,
+    "input_tokens": 1550,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 390,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 530,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 630,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "5c3edf12a49e4be5ab2ec1ce5c5f112e"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "5c3edf12a49e4be5ab2ec1ce5c5f112e"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "5c3edf12a49e4be5ab2ec1ce5c5f112e"
+      }
+    ],
+    "artifact_digest": "07f325e914c09a0cd048c464931495857ba2b83440ff25b2881a7fcd48082479"
+  },
+  {
+    "run_id": "s780cbc91-r2",
+    "sequence": 2,
+    "question": "And how does that compare for the South region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "approved",
+    "parent_run_id": "s780cbc91-r1",
+    "context_run_ids": [
+      "s780cbc91-r1"
+    ],
+    "messages": 4,
+    "input_tokens": 1793,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 471,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 611,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 711,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "4387b4fe2895468eb2a3a9e0ca9b063d"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "4387b4fe2895468eb2a3a9e0ca9b063d"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "4387b4fe2895468eb2a3a9e0ca9b063d"
+      }
+    ],
+    "artifact_digest": "a3443f1f2b07e8350b1e586e7f5541667dab9a4bc2896c6e2fdb831773808962"
+  }
+]

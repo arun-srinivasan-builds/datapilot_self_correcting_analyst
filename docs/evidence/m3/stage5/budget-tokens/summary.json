@@ -1,0 +1,41 @@
+{
+  "scenario": "budget-tokens",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "TOKEN_BUDGET_EXHAUSTED",
+  "speaker_order": "PC",
+  "agent_messages": 2,
+  "phase": "limit_reached",
+  "repair_attempts": 0,
+  "feedback_rounds": 0,
+  "reviewer_verified": false,
+  "human": "none",
+  "containers_created": 0,
+  "executions": [],
+  "code_hashes": [],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 530,
+      "output_tokens": 148,
+      "calls": 1
+    }
+  },
+  "total_tokens": 1099,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "limit_reached",
+    "terminated"
+  ]
+}

@@ -1,0 +1,11 @@
+--- original (Coder's own output)
++++ executed (after test-only mutation)
+@@ -5,7 +5,7 @@
+ import matplotlib.pyplot as plt
+ 
+ df = pd.read_csv(os.environ["DATA_PATH"], parse_dates=["order_date"])
+-df["revenue"] = df["units"] * df["unit_price"] * (1 - df["discount"])
++df["revenue"] = df["qty"] * df["unit_price"] * (1 - df["discount"])
+ df["month"] = df["order_date"].dt.strftime("%Y-%m")
+ by_cat = df.pivot_table(index="category", columns="month", values="revenue", aggfunc="sum")
+ change = (by_cat["2026-09"] - by_cat["2026-08"]).sort_values()

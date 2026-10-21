@@ -1,0 +1,58 @@
+{
+  "scenario": "injected-token-budget",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "TOKEN_BUDGET_EXHAUSTED",
+  "speaker_order": "PCE",
+  "agent_messages": 3,
+  "phase": "limit_reached",
+  "repair_attempts": 1,
+  "feedback_rounds": 0,
+  "reviewer_verified": false,
+  "human": "none",
+  "containers_created": 1,
+  "executions": [
+    {
+      "status": "error",
+      "exit_code": 1,
+      "duration_ms": 5452,
+      "stderr_head": "KeyError: 'qty'",
+      "artifacts": []
+    }
+  ],
+  "code_hashes": [
+    "e139383e2bbc"
+  ],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 530,
+      "output_tokens": 148,
+      "calls": 1
+    }
+  },
+  "total_tokens": 1099,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "test_fault_injected",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "limit_reached",
+    "terminated"
+  ]
+}

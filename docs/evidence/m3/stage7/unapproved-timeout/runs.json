@@ -1,0 +1,84 @@
+[
+  {
+    "run_id": "s22b911b2-r1",
+    "sequence": 1,
+    "question": "Which category had the biggest revenue drop in September vs August, and which region?",
+    "outcome": "TIMEOUT",
+    "reviewer_approved": false,
+    "human": "none",
+    "parent_run_id": null,
+    "context_run_ids": [],
+    "messages": 2,
+    "input_tokens": 920,
+    "output_tokens": 40,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 390,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 530,
+        "output_tokens": 9,
+        "calls": 1
+      }
+    },
+    "exec_ids": [],
+    "code_hashes": [
+      "d8b5c4b6751d"
+    ],
+    "artifacts": [],
+    "artifact_digest": "3f650b65c95c74078a914142902a7e0e44b249f8d960cc654c171b3df8cb33a8"
+  },
+  {
+    "run_id": "s22b911b2-r2",
+    "sequence": 2,
+    "question": "And how does that compare for the South region?",
+    "outcome": "REVIEWER_APPROVED",
+    "reviewer_approved": true,
+    "human": "none",
+    "parent_run_id": "s22b911b2-r1",
+    "context_run_ids": [],
+    "messages": 4,
+    "input_tokens": 1535,
+    "output_tokens": 192,
+    "usage_by_source": {
+      "Planner": {
+        "input_tokens": 385,
+        "output_tokens": 31,
+        "calls": 1
+      },
+      "Coder": {
+        "input_tokens": 525,
+        "output_tokens": 148,
+        "calls": 1
+      },
+      "Reviewer": {
+        "input_tokens": 625,
+        "output_tokens": 13,
+        "calls": 1
+      }
+    },
+    "exec_ids": [
+      "3622b60d9f6f4c78b09987234dc40062"
+    ],
+    "code_hashes": [
+      "932b0bb16496"
+    ],
+    "artifacts": [
+      {
+        "name": "category_change.png",
+        "size": 18489,
+        "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+        "exec_id": "3622b60d9f6f4c78b09987234dc40062"
+      },
+      {
+        "name": "results.json",
+        "size": 458,
+        "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+        "exec_id": "3622b60d9f6f4c78b09987234dc40062"
+      }
+    ],
+    "artifact_digest": "afbcf701110f69cecb57b9c8cde5a3f3f5312f9ea778d7c2e7ef51cfda5347d4"
+  }
+]

@@ -1,0 +1,376 @@
+{
+  "ask-explore": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1080
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 902
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1823
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2014
+    }
+  },
+  "insights-studio": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1454
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1364
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2188
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2787
+    }
+  },
+  "livewire-idle": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1202
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1213
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1715
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1754
+    }
+  },
+  "livewire-running": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1220
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1213
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1807
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1884
+    }
+  },
+  "livewire-exec-error": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1202
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1232
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2038
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2092
+    }
+  },
+  "livewire-repair": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1237
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1250
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1882
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1941
+    }
+  },
+  "livewire-reviewer-feedback": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1239
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1250
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1877
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1974
+    }
+  },
+  "livewire-approved": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1237
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1250
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1877
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1937
+    }
+  },
+  "livewire-limit-reached": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1239
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1250
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1892
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1952
+    }
+  },
+  "livewire-fault-injection": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1239
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1250
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2025
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2092
+    }
+  },
+  "tokens": {
+    "desktop-1920": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1356
+    },
+    "laptop-1366": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1356
+    },
+    "tablet-820": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 1629
+    },
+    "mobile-390": {
+      "overflowX": 0,
+      "clipped": [],
+      "overlaps": [],
+      "contrast": [],
+      "offscreen": [],
+      "pageHeight": 2765
+    }
+  }
+}

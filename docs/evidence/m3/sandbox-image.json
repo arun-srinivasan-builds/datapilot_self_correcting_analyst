@@ -1,0 +1,41 @@
+{
+  "lock": {
+    "image_tag": "datapilot-sandbox:m3",
+    "image_id": "sha256:354c6f52f5ca4be57c36aa01d1bcb8fa0d5580936c0e9a687d886aabe028d638",
+    "base_image": "python:3.11-slim",
+    "base_digest": "sha256:e88e9763f943ec1834f992a4b51e0f24500486803e8bc534e5767af9ea65f6ce",
+    "python": "3.11.17",
+    "packages": {
+      "pandas": "3.0.6",
+      "numpy": "2.4.6",
+      "openpyxl": "3.1.5",
+      "matplotlib": "3.11.2"
+    },
+    "user": "10001:10001",
+    "built_at": "2026-10-16T06:47:43+00:00",
+    "note": "The broker refuses to start unless the local image id equals image_id."
+  },
+  "inspect": {
+    "Id": "sha256:354c6f52f5ca4be57c36aa01d1bcb8fa0d5580936c0e9a687d886aabe028d638",
+    "Created": "2026-10-16T06:46:35.30475389Z",
+    "Os": "linux",
+    "Architecture": "amd64",
+    "Size_bytes": 97622795,
+    "User": "10001:10001",
+    "WorkingDir": "/tmp",
+    "Cmd": [
+      "python3"
+    ],
+    "Entrypoint": null,
+    "Env": [
+      "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "LANG=C.UTF-8",
+      "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+      "PYTHON_VERSION=3.11.17",
+      "PYTHON_SHA256=bfb74ad39efae27cda510f134ab408e00f9992c56851cfc0b1cdb5646da11599",
+      "PIP_NO_CACHE_DIR=1",
+      "PIP_DISABLE_PIP_VERSION_CHECK=1",
+      "PYTHONDONTWRITEBYTECODE=1"
+    ]
+  }
+}

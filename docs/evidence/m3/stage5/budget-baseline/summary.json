@@ -1,0 +1,66 @@
+{
+  "scenario": "budget-baseline",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "REVIEWER_APPROVED",
+  "speaker_order": "PCER",
+  "agent_messages": 4,
+  "phase": "approved",
+  "repair_attempts": 0,
+  "feedback_rounds": 0,
+  "reviewer_verified": true,
+  "human": "none",
+  "containers_created": 1,
+  "executions": [
+    {
+      "status": "ok",
+      "exit_code": 0,
+      "duration_ms": 5594,
+      "stderr_head": "",
+      "artifacts": [
+        "category_change.png",
+        "results.json"
+      ]
+    }
+  ],
+  "code_hashes": [
+    "932b0bb16496"
+  ],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 530,
+      "output_tokens": 148,
+      "calls": 1
+    },
+    "Reviewer": {
+      "input_tokens": 630,
+      "output_tokens": 13,
+      "calls": 1
+    }
+  },
+  "total_tokens": 1742,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "reviewer_approved",
+    "terminated"
+  ]
+}

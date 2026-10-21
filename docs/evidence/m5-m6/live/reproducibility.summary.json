@@ -1,0 +1,35 @@
+{
+  "outcome": "REVIEWER_APPROVED",
+  "messages": 4,
+  "tokens": [
+    5282,
+    3400
+  ],
+  "facts": [
+    {
+      "label": "Category with biggest revenue drop",
+      "value": "Electronics",
+      "unit": "category"
+    },
+    {
+      "label": "August revenue for category with biggest drop",
+      "value": 26638961.4,
+      "unit": "dataset price units"
+    },
+    {
+      "label": "September revenue for category with biggest drop",
+      "value": 22814178.05,
+      "unit": "dataset price units"
+    },
+    {
+      "label": "September minus August revenue for category with biggest drop",
+      "value": -3824783.3499999978,
+      "unit": "dataset price units"
+    },
+    {
+      "label": "Exact duplicate rows removed",
+      "value": 59,
+      "unit": "rows"
+    }
+  ]
+}

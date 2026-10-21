@@ -1,0 +1,83 @@
+{
+  "scenario": "natural-oom-not-injected",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "REVIEWER_APPROVED",
+  "speaker_order": "PCECER",
+  "agent_messages": 6,
+  "phase": "approved",
+  "repair_attempts": 1,
+  "feedback_rounds": 0,
+  "reviewer_verified": true,
+  "human": "none",
+  "containers_created": 2,
+  "executions": [
+    {
+      "status": "killed",
+      "exit_code": 137,
+      "duration_ms": 2202,
+      "stderr_head": "[sandbox] out of memory; execution killed",
+      "artifacts": []
+    },
+    {
+      "status": "ok",
+      "exit_code": 0,
+      "duration_ms": 8734,
+      "stderr_head": "",
+      "artifacts": [
+        "category_change.png",
+        "results.json"
+      ]
+    }
+  ],
+  "code_hashes": [
+    "a0ce5c839381",
+    "932b0bb16496"
+  ],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 1109,
+      "output_tokens": 166,
+      "calls": 2
+    },
+    "Reviewer": {
+      "input_tokens": 679,
+      "output_tokens": 13,
+      "calls": 1
+    }
+  },
+  "total_tokens": 2388,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "reviewer_approved",
+    "terminated"
+  ]
+}

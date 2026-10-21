@@ -1,0 +1,78 @@
+{
+  "scenario": "invalid-code-blocks",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "REVIEWER_APPROVED",
+  "speaker_order": "PCCCCER",
+  "agent_messages": 7,
+  "phase": "approved",
+  "repair_attempts": 0,
+  "feedback_rounds": 0,
+  "reviewer_verified": true,
+  "human": "none",
+  "containers_created": 1,
+  "executions": [
+    {
+      "status": "ok",
+      "exit_code": 0,
+      "duration_ms": 5672,
+      "stderr_head": "",
+      "artifacts": [
+        "category_change.png",
+        "results.json"
+      ]
+    }
+  ],
+  "code_hashes": [
+    "932b0bb16496"
+  ],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 2749,
+      "output_tokens": 462,
+      "calls": 4
+    },
+    "Reviewer": {
+      "input_tokens": 944,
+      "output_tokens": 13,
+      "calls": 1
+    }
+  },
+  "total_tokens": 4589,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "guardrail",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "guardrail",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "guardrail",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "reviewer_approved",
+    "terminated"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "session_id": "140b6fd2",
+  "decisions": [
+    {
+      "session_id": "140b6fd2",
+      "run_id": "s140b6fd2-r1",
+      "decision": "rejected",
+      "at": "2026-10-21T05:48:40+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "reason": "not useful",
+      "artifact_digest": "4b5e1a3997f26d2a9d15d6c4e78486ddc391ef1b5d1726a341027c554968db23",
+      "artifacts": [],
+      "code_hash": "",
+      "results_sha256": null
+    }
+  ],
+  "attempts": [
+    {
+      "kind": "approve",
+      "run_id": "s140b6fd2-r1",
+      "at": "2026-10-21T05:48:31+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "refused",
+      "code": "not_reviewer_approved"
+    },
+    {
+      "kind": "rejected",
+      "run_id": "s140b6fd2-r1",
+      "at": "2026-10-21T05:48:40+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "recorded",
+      "code": ""
+    }
+  ]
+}

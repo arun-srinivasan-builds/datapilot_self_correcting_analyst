@@ -1,0 +1,40 @@
+{
+  "outcome": "REVIEWER_APPROVED",
+  "messages": 4,
+  "tokens": [
+    6088,
+    4466
+  ],
+  "facts": [
+    {
+      "label": "Analysis year",
+      "value": 2026,
+      "unit": "year"
+    },
+    {
+      "label": "Exact duplicate rows removed",
+      "value": 59,
+      "unit": "rows"
+    },
+    {
+      "label": "Category with biggest revenue drop",
+      "value": "Electronics",
+      "unit": "category"
+    },
+    {
+      "label": "Category September-minus-August revenue change",
+      "value": -3824783.3499999978,
+      "unit": "currency units"
+    },
+    {
+      "label": "Region causing most of the category drop",
+      "value": "South",
+      "unit": "region"
+    },
+    {
+      "label": "Region September-minus-August revenue change",
+      "value": -5398501.0,
+      "unit": "currency units"
+    }
+  ]
+}

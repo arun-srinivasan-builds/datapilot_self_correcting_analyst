@@ -1,0 +1,72 @@
+{
+  "session_id": "7eb12a30",
+  "decisions": [
+    {
+      "session_id": "7eb12a30",
+      "run_id": "s7eb12a30-r1",
+      "decision": "rejected",
+      "at": "2026-10-21T05:50:10+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "reason": "Numbers look  wrong to me",
+      "artifact_digest": "e6ba22203830dfdea0097dc40c180aeba584b9d448e714009e4cb89cbaf394bc",
+      "artifacts": [
+        {
+          "name": "category_change.png",
+          "size": 18489,
+          "sha256": "fddade84dc0046bbb9f496978483f5437c9acdf19f87f13c3e86b7b7393f922b",
+          "exec_id": "053d82a46fce49a1a3ec5b1f132a6a02"
+        },
+        {
+          "name": "results.json",
+          "size": 458,
+          "sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d",
+          "exec_id": "053d82a46fce49a1a3ec5b1f132a6a02"
+        }
+      ],
+      "code_hash": "932b0bb16496",
+      "results_sha256": "70dab60282824f28cb9a1b3d0237adb88aad4559699a76d4ff618ba63b112c4d"
+    }
+  ],
+  "attempts": [
+    {
+      "kind": "rejected",
+      "run_id": "s7eb12a30-r1",
+      "at": "2026-10-21T05:50:10+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "recorded",
+      "code": ""
+    },
+    {
+      "kind": "approve",
+      "run_id": "s7eb12a30-r1",
+      "at": "2026-10-21T05:50:10+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "refused",
+      "code": "already_decided"
+    },
+    {
+      "kind": "reject",
+      "run_id": "s7eb12a30-r1",
+      "at": "2026-10-21T05:50:10+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "refused",
+      "code": "already_decided"
+    }
+  ]
+}

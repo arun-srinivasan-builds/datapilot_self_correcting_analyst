@@ -1,0 +1,20 @@
+{
+  "outcome": "REVIEWER_APPROVED",
+  "messages": 4,
+  "tokens": [
+    3696,
+    1758
+  ],
+  "facts": [
+    {
+      "label": "Category with highest total refund_amount",
+      "value": "Home",
+      "unit": "category"
+    },
+    {
+      "label": "Highest total refund_amount",
+      "value": 128170.76,
+      "unit": "currency units (unsp"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "answer_facts": [
+    {
+      "label": "Category with largest revenue drop",
+      "value": "Electronics",
+      "unit": ""
+    },
+    {
+      "label": "Category with largest revenue drop revenue change (September minus August)",
+      "value": -3980399.8499999978,
+      "unit": "currency units"
+    },
+    {
+      "label": "Region with largest revenue drop",
+      "value": "South",
+      "unit": ""
+    },
+    {
+      "label": "Region with largest revenue drop revenue change (September minus August)",
+      "value": -6268329.199999999,
+      "unit": "currency units"
+    },
+    {
+      "label": "Category–region combination with largest revenue drop",
+      "value": "Electronics — South",
+      "unit": ""
+    },
+    {
+      "label": "Category–region combination with largest revenue drop revenue change (September minus August)",
+      "value": -5596984.5,
+      "unit": "currency units"
+    },
+    {
+      "label": "Exact duplicate rows retained because accidental duplication could not be confirmed",
+      "value": 59,
+      "unit": "rows"
+    }
+  ],
+  "charts": [
+    {
+      "file": "revenue_by_category.png",
+      "title": "Revenue by Category: August vs September 2026",
+      "x_label": "Category",
+      "y_label": "Revenue (currency units)",
+      "unit": "currency units"
+    },
+    {
+      "file": "revenue_by_region.png",
+      "title": "Revenue by Region: August vs September 2026",
+      "x_label": "Region",
+      "y_label": "Revenue (currency units)",
+      "unit": "currency units"
+    },
+    {
+      "file": "revenue_change_by_category_region.png",
+      "title": "August–September Revenue Change by Category and Region",
+      "x_label": "Category–region combination",
+      "y_label": "Revenue change (currency units)",
+      "unit": "currency units"
+    }
+  ]
+}

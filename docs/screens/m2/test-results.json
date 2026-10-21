@@ -1,0 +1,47 @@
+{
+  "passed": 121,
+  "failed": 0,
+  "coverage": 94,
+  "ruff": "ruff check and ruff format --check clean (48 files); pip check clean",
+  "browser": "4 viewport walkthroughs (1920/1366/820/390) x 11 pages each: 0 overflow, 0 clipped, 0 overlapping labels, 0 contrast failures, chart labels >= 10.5 px, navigation and mobile controls OK; 0 browser console errors.",
+  "suites": [
+    [
+      "Ingestion + fixtures",
+      24,
+      "CSV/XLSX loading, validation, profiling, reproducible fixtures with independent ground truth"
+    ],
+    [
+      "Events + usage + client",
+      23,
+      "immutable events, store, reducer invariants, token usage, pricing, model parameters"
+    ],
+    [
+      "UI view-model + markup + charts",
+      26,
+      "event-derived canvas, XSS escaping, schema-driven suggestions, chart labels, light theme"
+    ],
+    [
+      "Streamlit app smoke (AppTest)",
+      15,
+      "real script execution, navigation, ingestion errors, inspector tabs, human-stage rules"
+    ],
+    [
+      "M2 acceptance (eight Livewire states)",
+      29,
+      "node labels/counters per state, Reviewer vs human, limit-reached, fault badge, counter, non-live"
+    ],
+    [
+      "Browser viewport walkthrough (Playwright)",
+      4,
+      "real server, 4 viewports, overflow / clipping / contrast / labels / navigation / controls"
+    ]
+  ],
+  "limitations": [
+    "No live agent execution: Run analysis is disabled until M3; Livewire/Insights show a labelled design preview only.",
+    "Exports (analysis.py, PNG, PDF) are disabled: no verified artifact exists before M3/M5.",
+    "Charts are static SVG matching the approved mockups; Plotly interactivity is planned for M5.",
+    "Livewire column heights are not forced equal (Streamlit wrapper structure).",
+    "Screenshots are Microsoft Edge (Chromium); Firefox/Safari were not exercised.",
+    "Sample dataset really contains 59 duplicate rows (reported by ingestion); the mockup showed 0."
+  ]
+}

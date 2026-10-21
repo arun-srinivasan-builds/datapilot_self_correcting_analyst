@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-16T13:40:40+00:00",
+  "ok": true,
+  "checks": [
+    {
+      "name": "interpreter",
+      "ok": true,
+      "detail": "running 3.11.9, required 3.11.x"
+    },
+    {
+      "name": "venv_is_project_venv",
+      "ok": true,
+      "detail": "sys.prefix=D:\\agentic-coding-labs\\datapilot_self_correcting_analyst\\.venv, expected D:\\agentic-coding-labs\\datapilot_self_correcting_analyst\\.venv"
+    },
+    {
+      "name": "pyvenv_cfg_version",
+      "ok": true,
+      "detail": "pyvenv.cfg version=3.11.9, home=C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311"
+    },
+    {
+      "name": "pins:requirements.txt",
+      "ok": true,
+      "detail": "all pins match"
+    },
+    {
+      "name": "pins:requirements-dev.txt",
+      "ok": true,
+      "detail": "all pins match"
+    },
+    {
+      "name": "no_legacy_autogen",
+      "ok": true,
+      "detail": "none installed"
+    },
+    {
+      "name": "pip_check",
+      "ok": true,
+      "detail": "No broken requirements found."
+    }
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "executable": "D:\\agentic-coding-labs\\datapilot_self_correcting_analyst\\.venv\\Scripts\\python.exe",
+  "prefix": "D:\\agentic-coding-labs\\datapilot_self_correcting_analyst\\.venv",
+  "pyvenv_cfg_sha256": "baa750725fc3e776f7bb9900ed3b7b6da2b1bc300707286098b96cb6247de2db",
+  "pyvenv_cfg": {
+    "home": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311",
+    "include-system-site-packages": "false",
+    "version": "3.11.9",
+    "executable": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "command": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m venv D:\\agentic-coding-labs\\datapilot_self_correcting_analyst\\.venv"
+  },
+  "installed": {
+    "autogen-agentchat": "0.7.5",
+    "autogen-core": "0.7.5",
+    "autogen-ext": "0.7.5",
+    "httpx": "0.28.1",
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.6",
+    "openai": "3.31.0",
+    "openpyxl": "3.1.5",
+    "pandas": "3.0.6",
+    "playwright": "1.64.0",
+    "plotly": "7.1.0",
+    "pydantic": "2.14.1",
+    "pydantic-settings": "2.16.0",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest-cov": "7.1.0",
+    "reportlab": "5.0.1",
+    "ruff": "0.17.0",
+    "streamlit": "1.66.0"
+  }
+}

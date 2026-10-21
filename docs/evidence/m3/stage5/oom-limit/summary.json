@@ -1,0 +1,128 @@
+{
+  "scenario": "oom-limit",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "LIMIT_REACHED",
+  "speaker_order": "PCECECECECEC",
+  "agent_messages": 12,
+  "phase": "limit_reached",
+  "repair_attempts": 5,
+  "feedback_rounds": 0,
+  "reviewer_verified": false,
+  "human": "none",
+  "containers_created": 5,
+  "executions": [
+    {
+      "status": "killed",
+      "exit_code": 137,
+      "duration_ms": 1937,
+      "stderr_head": "[sandbox] out of memory; execution killed",
+      "artifacts": []
+    },
+    {
+      "status": "killed",
+      "exit_code": 137,
+      "duration_ms": 2030,
+      "stderr_head": "[sandbox] out of memory; execution killed",
+      "artifacts": []
+    },
+    {
+      "status": "killed",
+      "exit_code": 137,
+      "duration_ms": 2032,
+      "stderr_head": "[sandbox] out of memory; execution killed",
+      "artifacts": []
+    },
+    {
+      "status": "killed",
+      "exit_code": 137,
+      "duration_ms": 2155,
+      "stderr_head": "[sandbox] out of memory; execution killed",
+      "artifacts": []
+    },
+    {
+      "status": "killed",
+      "exit_code": 137,
+      "duration_ms": 2047,
+      "stderr_head": "[sandbox] out of memory; execution killed",
+      "artifacts": []
+    }
+  ],
+  "code_hashes": [
+    "a0ce5c839381",
+    "a0ce5c839381",
+    "a0ce5c839381",
+    "a0ce5c839381",
+    "a0ce5c839381"
+  ],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 3915,
+      "output_tokens": 108,
+      "calls": 6
+    }
+  },
+  "total_tokens": 4444,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "limit_reached",
+    "terminated"
+  ]
+}

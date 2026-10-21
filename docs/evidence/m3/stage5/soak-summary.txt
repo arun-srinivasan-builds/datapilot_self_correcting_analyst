@@ -1,0 +1,60 @@
+{
+ "runs": 40,
+ "median_ms": 3718,
+ "max_ms": 4922,
+ "slowest": [
+  {
+   "i": 9,
+   "kind": "ok",
+   "http": 200,
+   "wall_ms": 4922,
+   "exec_id": "2b223e8a57b16088",
+   "stage_ms": 0,
+   "create_ms": 389,
+   "run_ms": 4172,
+   "inspect_ms": 110,
+   "collect_ms": 0,
+   "remove_ms": 233,
+   "total_ms": 4922,
+   "after_idle": false
+  },
+  {
+   "i": 31,
+   "kind": "ok",
+   "http": 200,
+   "wall_ms": 4671,
+   "exec_id": "c3b17f362853830d",
+   "stage_ms": 0,
+   "create_ms": 312,
+   "run_ms": 4062,
+   "inspect_ms": 109,
+   "collect_ms": 0,
+   "remove_ms": 171,
+   "total_ms": 4656,
+   "after_idle": false
+  },
+  {
+   "i": 37,
+   "kind": "ok",
+   "http": 200,
+   "wall_ms": 4561,
+   "exec_id": "4e891e0d4d64b12c",
+   "stage_ms": 14,
+   "create_ms": 360,
+   "run_ms": 3858,
+   "inspect_ms": 93,
+   "collect_ms": 0,
+   "remove_ms": 233,
+   "total_ms": 4561,
+   "after_idle": false
+  }
+ ],
+ "per_kind_median_ms": {
+  "ok": 4031,
+  "error": 1203,
+  "oom": 1750,
+  "timeout": 3891
+ },
+ "slow_over_20s": []
+}
+finished

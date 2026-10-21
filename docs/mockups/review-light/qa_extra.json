@@ -1,0 +1,3716 @@
+{
+  "ask-explore": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "select",
+          "h": 34,
+          "w": 256,
+          "t": "Orders\u25be"
+        },
+        {
+          "cls": "on",
+          "h": 26,
+          "w": 67,
+          "t": "Guarded"
+        },
+        {
+          "cls": "SPAN",
+          "h": 26,
+          "w": 89,
+          "t": "Round-robin"
+        },
+        {
+          "cls": "q",
+          "h": 104,
+          "w": 316,
+          "t": "Which category had t"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 101,
+          "t": "Run analysis"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "select",
+          "h": 34,
+          "w": 226,
+          "t": "Orders\u25be"
+        },
+        {
+          "cls": "on",
+          "h": 26,
+          "w": 67,
+          "t": "Guarded"
+        },
+        {
+          "cls": "SPAN",
+          "h": 26,
+          "w": 89,
+          "t": "Round-robin"
+        },
+        {
+          "cls": "q",
+          "h": 104,
+          "w": 276,
+          "t": "Which category had t"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 101,
+          "t": "Run analysis"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "select",
+          "h": 34,
+          "w": 694,
+          "t": "Orders\u25be"
+        },
+        {
+          "cls": "on",
+          "h": 26,
+          "w": 67,
+          "t": "Guarded"
+        },
+        {
+          "cls": "SPAN",
+          "h": 26,
+          "w": 89,
+          "t": "Round-robin"
+        },
+        {
+          "cls": "q",
+          "h": 104,
+          "w": 694,
+          "t": "Which category had t"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 101,
+          "t": "Run analysis"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "select",
+          "h": 34,
+          "w": 340,
+          "t": "Orders\u25be"
+        },
+        {
+          "cls": "on",
+          "h": 34,
+          "w": 71,
+          "t": "Guarded"
+        },
+        {
+          "cls": "SPAN",
+          "h": 34,
+          "w": 93,
+          "t": "Round-robin"
+        },
+        {
+          "cls": "q",
+          "h": 104,
+          "w": 340,
+          "t": "Which category had t"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 101,
+          "t": "Run analysis"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "insights-studio": {
+    "desktop-1920": {
+      "chartMin": 12.318,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 99,
+          "t": "\u2193 analysis.py"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 119,
+          "t": "\u2193 PNG \u00b7 2 charts"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 110,
+          "t": "\u2193 PDF \u00b7 1 page"
+        },
+        {
+          "cls": "btn danger",
+          "h": 34,
+          "w": 63,
+          "t": "Reject"
+        },
+        {
+          "cls": "btn ok",
+          "h": 34,
+          "w": 119,
+          "t": "Approve report"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 110,
+          "t": "Ask follow-up"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": 12.057053571428572,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 99,
+          "t": "\u2193 analysis.py"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 119,
+          "t": "\u2193 PNG \u00b7 2 charts"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 110,
+          "t": "\u2193 PDF \u00b7 1 page"
+        },
+        {
+          "cls": "btn danger",
+          "h": 34,
+          "w": 63,
+          "t": "Reject"
+        },
+        {
+          "cls": "btn ok",
+          "h": 34,
+          "w": 119,
+          "t": "Approve report"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 110,
+          "t": "Ask follow-up"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": 11.897142857142857,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 99,
+          "t": "\u2193 analysis.py"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 119,
+          "t": "\u2193 PNG \u00b7 2 charts"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 110,
+          "t": "\u2193 PDF \u00b7 1 page"
+        },
+        {
+          "cls": "btn danger",
+          "h": 34,
+          "w": 63,
+          "t": "Reject"
+        },
+        {
+          "cls": "btn ok",
+          "h": 34,
+          "w": 119,
+          "t": "Approve report"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 110,
+          "t": "Ask follow-up"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": 12,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 99,
+          "t": "\u2193 analysis.py"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 119,
+          "t": "\u2193 PNG \u00b7 2 charts"
+        },
+        {
+          "cls": "btn",
+          "h": 34,
+          "w": 110,
+          "t": "\u2193 PDF \u00b7 1 page"
+        },
+        {
+          "cls": "btn danger",
+          "h": 34,
+          "w": 63,
+          "t": "Reject"
+        },
+        {
+          "cls": "btn ok",
+          "h": 34,
+          "w": 119,
+          "t": "Approve report"
+        },
+        {
+          "cls": "btn primary",
+          "h": 34,
+          "w": 340,
+          "t": "Ask follow-up"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "tokens": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-idle": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 39,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 39,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 39,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 41,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 63,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 95,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 53,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 112,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-running": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 62,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 62,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 62,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 40,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 64,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 95,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 53,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 112,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-exec-error": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 96,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 96,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 96,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 40,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 63,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 98,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 53,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 112,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-repair": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 52,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 52,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 52,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 40,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 63,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 95,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 54,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 112,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-reviewer-feedback": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 40,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 63,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 95,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 53,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-approved": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 40,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 63,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 95,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 53,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 112,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-limit-reached": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 115,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 40,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 63,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 95,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 53,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 112,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 89,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 117,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  },
+  "livewire-fault-injection": {
+    "desktop-1920": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1080
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 119,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "laptop-1366": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          768
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 119,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "tablet-820": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "sticky",
+        "rect": [
+          0,
+          0,
+          60,
+          1180
+        ],
+        "inViewport": true,
+        "minTarget": 44
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 44,
+          "w": 44,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 44,
+          "w": 44,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 38,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 61,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 93,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 51,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 110,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 113,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 85,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 25,
+          "w": 119,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    },
+    "mobile-390": {
+      "chartMin": null,
+      "chartSmall": [],
+      "nav": {
+        "links": 3,
+        "hrefs": [
+          "ask-explore.html",
+          "livewire-running.html",
+          "insights-studio.html"
+        ],
+        "active": 1,
+        "position": "fixed",
+        "rect": [
+          0,
+          786,
+          390,
+          58
+        ],
+        "inViewport": true,
+        "minTarget": 58
+      },
+      "targets": [
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Explore"
+        },
+        {
+          "cls": "nav is-active",
+          "h": 58,
+          "w": 126,
+          "t": "Livewire"
+        },
+        {
+          "cls": "nav",
+          "h": 58,
+          "w": 126,
+          "t": "Studio"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 40,
+          "t": "Idle"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 63,
+          "t": "Running"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 95,
+          "t": "Execution error"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 53,
+          "t": "Repair"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 112,
+          "t": "Reviewer feedback"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 115,
+          "t": "Reviewer approved"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 87,
+          "t": "Limit reached"
+        },
+        {
+          "cls": "state-nav",
+          "h": 35,
+          "w": 121,
+          "t": "Fault injection (tes"
+        }
+      ],
+      "tinyText": []
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "session_id": "5afe5b5a",
+  "decisions": [],
+  "attempts": [
+    {
+      "kind": "approve",
+      "run_id": "s5afe5b5a-r2",
+      "at": "2026-10-21T05:51:17+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "refused",
+      "code": "not_reviewer_approved"
+    },
+    {
+      "kind": "approve",
+      "run_id": "s5afe5b5a-r3",
+      "at": "2026-10-21T05:51:17+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "refused",
+      "code": "not_reviewer_approved"
+    },
+    {
+      "kind": "approve",
+      "run_id": "s5afe5b5a-r4",
+      "at": "2026-10-21T05:51:17+00:00",
+      "actor": {
+        "kind": "local_operator",
+        "identifier": null,
+        "verified": false
+      },
+      "result": "refused",
+      "code": "not_reviewer_approved"
+    }
+  ]
+}

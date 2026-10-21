@@ -1,0 +1,25 @@
+{
+  "outcome": "REVIEWER_APPROVED",
+  "messages": 4,
+  "tokens": [
+    5435,
+    2758
+  ],
+  "facts": [
+    {
+      "label": "Category with biggest revenue drop",
+      "value": "Electronics",
+      "unit": "category"
+    },
+    {
+      "label": "Biggest revenue change (September minus August)",
+      "value": -3824783.3499999978,
+      "unit": "unit_price currency "
+    },
+    {
+      "label": "Exact duplicate rows removed",
+      "value": 59,
+      "unit": "rows"
+    }
+  ]
+}

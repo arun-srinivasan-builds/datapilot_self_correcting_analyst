@@ -1,0 +1,35 @@
+{
+  "outcome": "REVIEWER_APPROVED",
+  "messages": 4,
+  "tokens": [
+    4528,
+    2332
+  ],
+  "facts": [
+    {
+      "label": "Department with highest total net_amount",
+      "value": "Laptops",
+      "unit": ""
+    },
+    {
+      "label": "Highest department total net_amount",
+      "value": 117925069.19,
+      "unit": "currency units"
+    },
+    {
+      "label": "Missing net_amount values excluded from totals",
+      "value": 64,
+      "unit": "values"
+    },
+    {
+      "label": "Exact duplicate rows beyond first (retained; not confirmed accidental)",
+      "value": 10,
+      "unit": "rows"
+    },
+    {
+      "label": "Duplicate rows dropped",
+      "value": 0,
+      "unit": "rows"
+    }
+  ]
+}

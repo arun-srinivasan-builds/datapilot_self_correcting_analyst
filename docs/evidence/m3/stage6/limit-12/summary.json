@@ -1,0 +1,133 @@
+{
+  "scenario": "limit-12",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "LIMIT_REACHED",
+  "speaker_order": "PCECECECECEC",
+  "agent_messages": 12,
+  "phase": "limit_reached",
+  "repair_attempts": 5,
+  "feedback_rounds": 0,
+  "reviewer_verified": false,
+  "human": "none",
+  "containers_created": 5,
+  "executions": [
+    {
+      "status": "error",
+      "exit_code": 1,
+      "duration_ms": 5609,
+      "stderr_head": "KeyError: 'qty'",
+      "artifacts": []
+    },
+    {
+      "status": "error",
+      "exit_code": 1,
+      "duration_ms": 6250,
+      "stderr_head": "KeyError: 'qty'",
+      "artifacts": []
+    },
+    {
+      "status": "error",
+      "exit_code": 1,
+      "duration_ms": 7000,
+      "stderr_head": "KeyError: 'qty'",
+      "artifacts": []
+    },
+    {
+      "status": "error",
+      "exit_code": 1,
+      "duration_ms": 9217,
+      "stderr_head": "KeyError: 'qty'",
+      "artifacts": []
+    },
+    {
+      "status": "error",
+      "exit_code": 1,
+      "duration_ms": 5922,
+      "stderr_head": "KeyError: 'qty'",
+      "artifacts": []
+    }
+  ],
+  "code_hashes": [
+    "e139383e2bbc",
+    "e139383e2bbc",
+    "e139383e2bbc",
+    "e139383e2bbc",
+    "e139383e2bbc"
+  ],
+  "usage": {
+    "Planner": {
+      "input_tokens": 390,
+      "output_tokens": 31,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 7185,
+      "output_tokens": 888,
+      "calls": 6
+    }
+  },
+  "total_tokens": 8494,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "usage",
+    "agent_message",
+    "speaker_selected",
+    "usage",
+    "test_fault_injected",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "test_fault_injected",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "test_fault_injected",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "test_fault_injected",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "test_fault_injected",
+    "code_generated",
+    "agent_message",
+    "speaker_selected",
+    "exec_started",
+    "exec_result",
+    "agent_message",
+    "repair_routed",
+    "speaker_selected",
+    "usage",
+    "code_generated",
+    "agent_message",
+    "limit_reached",
+    "terminated"
+  ]
+}

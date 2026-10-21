@@ -1,0 +1,9 @@
+--- original (Coder's own output)
++++ executed (after test-only mutation)
+@@ -1,4 +1,6 @@
+ import json, os
++while True:
++    pass
+ import pandas as pd
+ import matplotlib
+ matplotlib.use("Agg")

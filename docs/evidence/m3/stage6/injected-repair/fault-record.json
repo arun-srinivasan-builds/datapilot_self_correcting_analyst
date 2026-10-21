@@ -1,0 +1,43 @@
+{
+  "scenario": "injected-repair",
+  "fault": {
+    "fault": "missing_column",
+    "description": "Coder's code mutated: column reference 'units' renamed to 'qty' (raises KeyError)",
+    "injections": [
+      {
+        "occurrence": 1,
+        "original_hash": "932b0bb16496",
+        "mutated_hash": "e139383e2bbc",
+        "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -5,7 +5,7 @@\n import matplotlib.pyplot as plt\n \n df = pd.read_csv(os.environ[\"DATA_PATH\"], parse_dates=[\"order_date\"])\n-df[\"revenue\"] = df[\"units\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n+df[\"revenue\"] = df[\"qty\"] * df[\"unit_price\"] * (1 - df[\"discount\"])\n df[\"month\"] = df[\"order_date\"].dt.strftime(\"%Y-%m\")\n by_cat = df.pivot_table(index=\"category\", columns=\"month\", values=\"revenue\", aggfunc=\"sum\")\n change = (by_cat[\"2026-09\"] - by_cat[\"2026-08\"]).sort_values()"
+      }
+    ]
+  },
+  "fault_event_seqs": [
+    7
+  ],
+  "executions": [
+    {
+      "broker_exec_id": "f25c7b64514945148b103bbe4277d83e",
+      "code_hash": "e139383e2bbc",
+      "injected_fault": "missing_column",
+      "status": "error",
+      "exit_code": 1,
+      "stderr_tail": "  File \"/usr/local/lib/python3.11/site-packages/pandas/core/indexes/base.py\", line 3648, in get_loc\n    raise KeyError(key) from err\nKeyError: 'qty'",
+      "duration_ms": 6422,
+      "exec_started_seq": 11,
+      "exec_result_seq": 12
+    },
+    {
+      "broker_exec_id": "f5372f3c3c454ff6b43bf540716e4f14",
+      "code_hash": "932b0bb16496",
+      "injected_fault": null,
+      "status": "ok",
+      "exit_code": 0,
+      "stderr_tail": "",
+      "duration_ms": 5640,
+      "exec_started_seq": 20,
+      "exec_result_seq": 21
+    }
+  ],
+  "outcome": "REVIEWER_APPROVED"
+}

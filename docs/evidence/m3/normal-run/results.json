@@ -1,0 +1,67 @@
+{
+  "answer_facts": [
+    {
+      "label": "Comparison year",
+      "value": 2026,
+      "unit": "year"
+    },
+    {
+      "label": "Exact duplicate rows removed",
+      "value": 59,
+      "unit": "rows"
+    },
+    {
+      "label": "Category with largest August-to-September revenue drop",
+      "value": "Electronics",
+      "unit": "category"
+    },
+    {
+      "label": "Largest category revenue drop",
+      "value": 3824783.3499999978,
+      "unit": "currency units (August minus September)"
+    },
+    {
+      "label": "Region with largest August-to-September revenue drop",
+      "value": "South",
+      "unit": "region"
+    },
+    {
+      "label": "Largest region revenue drop",
+      "value": 6018767.949999999,
+      "unit": "currency units (August minus September)"
+    },
+    {
+      "label": "Category\u2013region pair with largest August-to-September revenue drop",
+      "value": "Electronics \u2014 South",
+      "unit": "category\u2013region pair"
+    },
+    {
+      "label": "Largest category\u2013region revenue drop",
+      "value": 5398501.0,
+      "unit": "currency units (August minus September)"
+    }
+  ],
+  "charts": [
+    {
+      "file": "revenue_by_category.png",
+      "title": "Revenue by Category: August vs September",
+      "x_label": "Category",
+      "y_label": "Revenue (currency units)",
+      "unit": "currency units"
+    },
+    {
+      "file": "revenue_by_region.png",
+      "title": "Revenue by Region: August vs September",
+      "x_label": "Region",
+      "y_label": "Revenue (currency units)",
+      "unit": "currency units"
+    },
+    {
+      "file": "revenue_drop_by_category_region.png",
+      "title": "August-to-September Revenue Drop by Category and Region",
+      "x_label": "Category\u2013region pair",
+      "y_label": "Revenue drop (currency units; August minus September)",
+      "unit": "currency units"
+    }
+  ]
+}

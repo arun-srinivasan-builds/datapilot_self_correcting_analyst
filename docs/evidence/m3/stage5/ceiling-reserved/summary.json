@@ -1,0 +1,24 @@
+{
+  "scenario": "ceiling-reserved",
+  "llm": "scripted replay (no live model calls)",
+  "sandbox": "real Docker containers via the real broker",
+  "outcome": "TOKEN_BUDGET_EXHAUSTED",
+  "speaker_order": "",
+  "agent_messages": 0,
+  "phase": "limit_reached",
+  "repair_attempts": 0,
+  "feedback_rounds": 0,
+  "reviewer_verified": false,
+  "human": "none",
+  "containers_created": 0,
+  "executions": [],
+  "code_hashes": [],
+  "usage": {},
+  "total_tokens": 0,
+  "event_types": [
+    "run_started",
+    "speaker_selected",
+    "limit_reached",
+    "terminated"
+  ]
+}
