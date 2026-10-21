@@ -60,7 +60,7 @@ for f in /etc/traefik/traefik.yml /etc/traefik/traefik.yaml /opt/traefik/traefik
          /opt/traefik/docker-compose.yml /root/traefik/docker-compose.yml; do
   if [ -r "$f" ]; then printf '\n--- %s\n' "$f"; redact < "$f" | head -n 120; fi
 done
-run sh -c 'docker ps --format "{{.Names}}" | xargs -r -I{} sh -c "docker inspect --format \"{{.Name}}: {{range \\\$k,\\\$v := .Config.Labels}}{{if eq (printf \\\"%.8s\\\" \\\$k) \\\"traefik.\\\"}}{{\\\$k}}={{\\\$v}} | {{end}}{{end}}\" {}" | grep "traefik\." | sed -E "s#(basicauth\.users=)[^ |]+#[REDACTED]#g"'
+run sh -c 'docker ps --format "{{.Names}}" | xargs -r -I{} sh -c "docker inspect --format \"{{.Name}}: {{range \\\$k,\\\$v := .Config.Labels}}{{if eq (printf \\\"%.8s\\\" \\\$k) \\\"traefik.\\\"}}{{\\\$k}}={{\\\$v}} | {{end}}{{end}}\" {}" | grep "traefik\." | sed -E "s#basicauth\.users=[^ |]+#basicauth.users=[REDACTED]#g"'
 
 section "9. Resources"
 run free -m
