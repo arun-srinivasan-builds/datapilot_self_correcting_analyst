@@ -30,7 +30,10 @@ def main() -> int:
     manager = RunManager(cfg, runtime, lock)
     manager.startup_reap()
     server = make_server(cfg, manager)
-    log.info("broker listening on %s:%s (loopback only)", cfg.host, server.port)
+    if cfg.socket_path:
+        log.info("broker listening on unix socket %s (group-restricted)", cfg.socket_path)
+    else:
+        log.info("broker listening on %s:%s (loopback only)", cfg.host, server.port)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
