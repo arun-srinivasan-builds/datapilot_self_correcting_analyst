@@ -1,0 +1,31 @@
+# DataPilot app service. The sandbox broker is a SEPARATE host service (PRP decision D11): the app
+# container gets neither the Docker socket nor any runtime access, only the broker's HTTP API.
+#
+# Local test (Docker Desktop):  docker compose up --build   -> http://localhost:8501
+# The broker must be running on the host; SANDBOX_URL points the container at it.
+# VPS: routing labels, network and domain are added only after the read-only VPS inspection and
+# approval (see docs/DEPLOY.md). Nothing here touches Traefik or other stacks.
+services:
+  app:
+    build: .
+    image: datapilot:${IMAGE_TAG:-dev}
+    env_file: .env # OPENAI_API_KEY, SANDBOX_TOKEN ... never baked into the image
+    environment:
+      SANDBOX_URL: ${SANDBOX_URL:-http://host.docker.internal:8765}
+      APP_ENV: production
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "127.0.0.1:${APP_PORT:-8501}:8501" # loopback only; the proxy publishes it on the VPS
+    volumes:
+      - artifacts:/data
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=256m
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  artifacts: {}

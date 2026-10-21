@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     openai_api_key: SecretStr = SecretStr("")
     openai_model: str = "gpt-6-luna"
     max_agent_messages: int = 12
-    sandbox_url: str = "http://sandbox:8080"
+    sandbox_url: str = "http://127.0.0.1:8765"
     sandbox_timeout_seconds: int = 60
     sandbox_token: SecretStr = SecretStr("")
     max_upload_mb: int = 25

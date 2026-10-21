@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import os
 
 import streamlit as st
 
@@ -40,7 +41,8 @@ def main() -> None:
     inject_theme()
     init_state()
     render_rail()
-    if problems := environment_problems():
+    # In the container the image itself is the pinned environment (no project .venv to compare).
+    if os.environ.get("DATAPILOT_CONTAINER") != "1" and (problems := environment_problems()):
         st.error("Environment check failed (Python 3.11 venv required): " + "; ".join(problems))
     WORKSPACES[st.session_state["ws"]]()
 

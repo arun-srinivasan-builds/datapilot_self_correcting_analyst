@@ -20,6 +20,7 @@ from concurrent.futures import Future
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, TypeVar
+from urllib.parse import urlparse
 
 import streamlit as st
 
@@ -36,7 +37,7 @@ from datapilot.session import Actor, ApprovalRefused, DatasetRef, RunRecord, Ses
 
 log = logging.getLogger(__name__)
 T = TypeVar("T")
-BROKER_URL = "http://127.0.0.1:8765"
+LOOPBACK = ("127.0.0.1", "localhost", "::1")
 _ARTIFACT_LIMIT = 8_000_000
 
 
@@ -74,15 +75,22 @@ class Runtime:
     def broker(self, settings: Settings) -> BrokerClient:
         """A client for a healthy broker; starts the loopback broker subprocess if needed."""
         token = settings.sandbox_token.get_secret_value()
-        client = BrokerClient(BROKER_URL, token)
+        url = urlparse(settings.sandbox_url)
+        client = BrokerClient(settings.sandbox_url, token)
         with self._broker_lock:
             if self.submit(client.healthy()).result(10):
                 return client
+            if url.hostname not in LOOPBACK:
+                # Containerised / remote deployment: the broker is a separate service. The app
+                # never starts it (it holds no container runtime access by design).
+                raise LiveUnavailableError(
+                    "The sandbox broker is not reachable. Check the broker service and SANDBOX_URL."
+                )
             if self._broker_proc is None or self._broker_proc.poll() is not None:
                 env = {
                     **os.environ,
                     "SANDBOX_TOKEN": token,
-                    "SANDBOX_PORT": "8765",
+                    "SANDBOX_PORT": str(url.port or 8765),
                     "SANDBOX_ROOT": str(PROJECT_ROOT / ".sandbox"),
                 }
                 self._broker_proc = subprocess.Popen(  # noqa: S603
