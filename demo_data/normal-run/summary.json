@@ -1,100 +1,84 @@
 {
   "demo": "normal",
-  "run_id": "s41449c09-r1",
+  "run_id": "s1d9e446e-r1",
   "outcome": "REVIEWER_APPROVED",
   "reviewer_approved": true,
   "messages": 4,
   "tokens": {
-    "input": 6064,
-    "output": 4356
+    "input": 6065,
+    "output": 4351
   },
   "usage_by_source": {
     "Planner": {
       "input_tokens": 1018,
-      "output_tokens": 605,
+      "output_tokens": 440,
       "calls": 1
     },
     "Coder": {
-      "input_tokens": 1461,
-      "output_tokens": 3392,
+      "input_tokens": 1497,
+      "output_tokens": 3517,
       "calls": 1
     },
     "Reviewer": {
-      "input_tokens": 3585,
-      "output_tokens": 359,
+      "input_tokens": 3550,
+      "output_tokens": 394,
       "calls": 1
     }
   },
   "exec_count": 1,
   "code_hashes": [
-    "36f2aa277925"
+    "efe80262cd25"
   ],
   "facts": [
-    {
-      "label": "Comparison year",
-      "value": 2026,
-      "unit": "year"
-    },
     {
       "label": "Exact duplicate rows removed",
       "value": 59,
       "unit": "rows"
     },
     {
-      "label": "Category with largest August-to-September revenue drop",
+      "label": "Category with biggest revenue drop",
       "value": "Electronics",
       "unit": "category"
     },
     {
-      "label": "Largest category revenue drop",
-      "value": 3824783.3499999978,
-      "unit": "currency units (Augu"
-    },
-    {
-      "label": "Region with largest August-to-September revenue drop",
+      "label": "Region with biggest revenue drop",
       "value": "South",
       "unit": "region"
     },
     {
-      "label": "Largest region revenue drop",
-      "value": 6018767.949999999,
-      "unit": "currency units (Augu"
+      "label": "Largest revenue change (September minus August)",
+      "value": -5398501.0,
+      "unit": "currency"
     },
     {
-      "label": "Category\u2013region pair with largest August-to-September revenue drop",
-      "value": "Electronics \u2014 South",
-      "unit": "category\u2013region pair"
+      "label": "August revenue for largest-drop category\u2013region",
+      "value": 7601316.0,
+      "unit": "currency"
     },
     {
-      "label": "Largest category\u2013region revenue drop",
-      "value": 5398501.0,
-      "unit": "currency units (Augu"
+      "label": "September revenue for largest-drop category\u2013region",
+      "value": 2202815.0,
+      "unit": "currency"
     }
   ],
   "artifacts": [
     {
+      "name": "largest_drop_august_vs_september_revenue.png",
+      "size": 34527,
+      "sha256": "4e38ac7606d42b2932dd1134d6954babb102eae652e6155f7bba22869a5226bf",
+      "exec_id": "7726fb6ac2014dc987488eb297c12366"
+    },
+    {
       "name": "results.json",
-      "size": 1870,
-      "sha256": "e3331e849fe6e95e4973be3c315119446a8bc6d2cfc0de822f2bec17bffde4af",
-      "exec_id": "32c40f4de59b456abfb0923be4690d34"
+      "size": 2978,
+      "sha256": "3421b8391ff2f904f88cab2f0b208060b337da3523d80bfae72bd5f9f933f9d9",
+      "exec_id": "7726fb6ac2014dc987488eb297c12366"
     },
     {
-      "name": "revenue_by_category.png",
-      "size": 45723,
-      "sha256": "b333a6f116835c4e8aedfb11199c4161a94ad19afc9ed2a91de4ce10f888cb1c",
-      "exec_id": "32c40f4de59b456abfb0923be4690d34"
-    },
-    {
-      "name": "revenue_by_region.png",
-      "size": 43427,
-      "sha256": "c032295130db90fa4ad91cc85a5413e37f1bdb1007aa1b63d5944572347ab105",
-      "exec_id": "32c40f4de59b456abfb0923be4690d34"
-    },
-    {
-      "name": "revenue_drop_by_category_region.png",
-      "size": 130404,
-      "sha256": "3f80a47337d99e48ca87f5b4d3d2be79e35ebe41f3c181e9f9560e62efe84683",
-      "exec_id": "32c40f4de59b456abfb0923be4690d34"
+      "name": "revenue_change_september_vs_august_2026.png",
+      "size": 100417,
+      "sha256": "b8672aa7c354a87224f49f58c612e1f69bb186dc9390fa42483a42bd5744c888",
+      "exec_id": "7726fb6ac2014dc987488eb297c12366"
     }
   ],
   "ground_truth": {

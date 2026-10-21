@@ -1,62 +1,132 @@
 {
   "answer_facts": [
     {
-      "label": "Category with largest revenue drop",
+      "label": "Category with biggest overall revenue drop",
       "value": "Electronics",
-      "unit": ""
+      "unit": "category"
     },
     {
-      "label": "Category with largest revenue drop revenue change (September minus August)",
-      "value": -3980399.8499999978,
-      "unit": "currency units"
+      "label": "Biggest overall category revenue drop (August minus September)",
+      "value": 3980399.8499999978,
+      "unit": "dataset currency units"
     },
     {
-      "label": "Region with largest revenue drop",
+      "label": "Region with biggest total revenue drop across categories",
       "value": "South",
-      "unit": ""
+      "unit": "region"
     },
     {
-      "label": "Region with largest revenue drop revenue change (September minus August)",
-      "value": -6268329.199999999,
-      "unit": "currency units"
+      "label": "Biggest regional revenue drop (August minus September)",
+      "value": 6268329.199999999,
+      "unit": "dataset currency units"
     },
     {
-      "label": "Category–region combination with largest revenue drop",
-      "value": "Electronics — South",
-      "unit": ""
+      "label": "Category-region pair with biggest revenue drop",
+      "value": "Electronics – South",
+      "unit": "category–region pair"
     },
     {
-      "label": "Category–region combination with largest revenue drop revenue change (September minus August)",
-      "value": -5596984.5,
-      "unit": "currency units"
-    },
-    {
-      "label": "Exact duplicate rows retained because accidental duplication could not be confirmed",
-      "value": 59,
-      "unit": "rows"
+      "label": "Biggest category-region pair revenue drop (August minus September)",
+      "value": 5596984.5,
+      "unit": "dataset currency units"
     }
   ],
   "charts": [
     {
-      "file": "revenue_by_category.png",
-      "title": "Revenue by Category: August vs September 2026",
+      "file": "revenue_by_category_and_month.png",
+      "title": "Revenue by Category and Month",
       "x_label": "Category",
-      "y_label": "Revenue (currency units)",
-      "unit": "currency units"
+      "y_label": "Revenue",
+      "unit": "dataset currency units",
+      "data": {
+        "categories": [
+          "Apparel",
+          "Beauty",
+          "Electronics",
+          "Grocery",
+          "Home"
+        ],
+        "series": [
+          {
+            "name": "August",
+            "values": [
+              14577187.55,
+              6012855.4,
+              26837444.9,
+              4505084.5,
+              11212978.8
+            ]
+          },
+          {
+            "name": "September",
+            "values": [
+              13710387.2,
+              6619699.15,
+              22857045.05,
+              4911986.45,
+              10257039.85
+            ]
+          }
+        ]
+      }
     },
     {
-      "file": "revenue_by_region.png",
-      "title": "Revenue by Region: August vs September 2026",
-      "x_label": "Region",
-      "y_label": "Revenue (currency units)",
-      "unit": "currency units"
-    },
-    {
-      "file": "revenue_change_by_category_region.png",
-      "title": "August–September Revenue Change by Category and Region",
-      "x_label": "Category–region combination",
-      "y_label": "Revenue change (currency units)",
-      "unit": "currency units"
+      "file": "august_to_september_change_by_category_region.png",
+      "title": "August-to-September Revenue Change by Category and Region",
+      "x_label": "Category–Region pair",
+      "y_label": "Revenue change (September minus August)",
+      "unit": "dataset currency units",
+      "data": {
+        "categories": [
+          "Apparel – East",
+          "Apparel – North",
+          "Apparel – South",
+          "Apparel – West",
+          "Beauty – East",
+          "Beauty – North",
+          "Beauty – South",
+          "Beauty – West",
+          "Electronics – East",
+          "Electronics – North",
+          "Electronics – South",
+          "Electronics – West",
+          "Grocery – East",
+          "Grocery – North",
+          "Grocery – South",
+          "Grocery – West",
+          "Home – East",
+          "Home – North",
+          "Home – South",
+          "Home – West"
+        ],
+        "series": [
+          {
+            "name": "September minus August",
+            "values": [
+              -421899.25,
+              -432471.9499999997,
+              -517369.6000000001,
+              504940.4500000002,
+              281848.44999999995,
+              -222750.8999999999,
+              84016.5,
+              463729.7000000002,
+              328275.4500000002,
+              799176.5499999998,
+              -5596984.5,
+              489132.64999999944,
+              77814.19999999995,
+              56876.30000000005,
+              72585.0,
+              199626.44999999995,
+              108179.8999999999,
+              213728.8999999999,
+              -310576.6000000001,
+              -967271.1500000004
+            ]
+          }
+        ]
+      }
     }
   ]
 }

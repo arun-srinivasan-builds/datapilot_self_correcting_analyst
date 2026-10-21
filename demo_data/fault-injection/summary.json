@@ -1,96 +1,85 @@
 {
   "demo": "fault_injection",
-  "run_id": "s9532f1c8-r1",
+  "run_id": "s76a48afc-r1",
   "outcome": "REVIEWER_APPROVED",
   "reviewer_approved": true,
   "messages": 6,
   "tokens": {
-    "input": 12199,
-    "output": 6488
+    "input": 12467,
+    "output": 6054
   },
   "usage_by_source": {
     "Planner": {
       "input_tokens": 1018,
-      "output_tokens": 593,
+      "output_tokens": 454,
       "calls": 1
     },
     "Coder": {
-      "input_tokens": 5318,
-      "output_tokens": 5532,
+      "input_tokens": 5549,
+      "output_tokens": 5284,
       "calls": 2
     },
     "Reviewer": {
-      "input_tokens": 5863,
-      "output_tokens": 363,
+      "input_tokens": 5900,
+      "output_tokens": 316,
       "calls": 1
     }
   },
   "exec_count": 2,
   "code_hashes": [
-    "d43e36c85e84",
-    "e46beb0f07c3"
+    "30c643cc4d8f",
+    "cfd5254d2d0e"
   ],
   "facts": [
     {
-      "label": "Category with largest revenue drop",
+      "label": "Category with biggest overall revenue drop",
       "value": "Electronics",
-      "unit": ""
+      "unit": "category"
     },
     {
-      "label": "Category with largest revenue drop revenue change (September minus August)",
-      "value": -3980399.8499999978,
-      "unit": "currency units"
+      "label": "Biggest overall category revenue drop (August minus September)",
+      "value": 3980399.8499999978,
+      "unit": "dataset currency uni"
     },
     {
-      "label": "Region with largest revenue drop",
+      "label": "Region with biggest total revenue drop across categories",
       "value": "South",
-      "unit": ""
+      "unit": "region"
     },
     {
-      "label": "Region with largest revenue drop revenue change (September minus August)",
-      "value": -6268329.199999999,
-      "unit": "currency units"
+      "label": "Biggest regional revenue drop (August minus September)",
+      "value": 6268329.199999999,
+      "unit": "dataset currency uni"
     },
     {
-      "label": "Category\u2013region combination with largest revenue drop",
-      "value": "Electronics \u2014 South",
-      "unit": ""
+      "label": "Category-region pair with biggest revenue drop",
+      "value": "Electronics \u2013 South",
+      "unit": "category\u2013region pair"
     },
     {
-      "label": "Category\u2013region combination with largest revenue drop revenue change (September ",
-      "value": -5596984.5,
-      "unit": "currency units"
-    },
-    {
-      "label": "Exact duplicate rows retained because accidental duplication could not be confir",
-      "value": 59,
-      "unit": "rows"
+      "label": "Biggest category-region pair revenue drop (August minus September)",
+      "value": 5596984.5,
+      "unit": "dataset currency uni"
     }
   ],
   "artifacts": [
     {
+      "name": "august_to_september_change_by_category_region.png",
+      "size": 102004,
+      "sha256": "66a790e8ca21ed3c4e63f26cc4bdffe0fdfae71b349d68be3687a8a71f4284fa",
+      "exec_id": "8962aaeac08e4c34ba8153fca99b3df4"
+    },
+    {
       "name": "results.json",
-      "size": 1805,
-      "sha256": "638c085818cbe8fe9ff505c1cb35d35d41b5062d681828e73aa4978f026e5827",
-      "exec_id": "ed32438ddfbb49c9a68629f6f91e7408"
+      "size": 3542,
+      "sha256": "d50c9c418d2102dd77aebe5ce9a19f5d7e2cfa295cc0c290d3c69b28c2ea1596",
+      "exec_id": "8962aaeac08e4c34ba8153fca99b3df4"
     },
     {
-      "name": "revenue_by_category.png",
-      "size": 55481,
-      "sha256": "a593b3225c2a0ba1f9f810e8eafb9a944f7cacff6271380e6968c3b2e9c97948",
-      "exec_id": "ed32438ddfbb49c9a68629f6f91e7408"
-    },
-    {
-      "name": "revenue_by_region.png",
-      "size": 51200,
-      "sha256": "302a783dba7c740c3c5fe461792c02f1d32945fd610c3727cc10d2f13d75f813",
-      "exec_id": "ed32438ddfbb49c9a68629f6f91e7408"
-    },
-    {
-      "name": "revenue_change_by_category_region.png",
-      "size": 113782,
-      "sha256": "5d41d04ca616e9bd7f4f32d04631249b9cd4922353bfbf6ace3902400db211df",
-      "exec_id": "ed32438ddfbb49c9a68629f6f91e7408"
+      "name": "revenue_by_category_and_month.png",
+      "size": 49739,
+      "sha256": "e8362c1bab063a1c5d4e980aef8e8f39738ac602e4f975c403517e16cb1fc73d",
+      "exec_id": "8962aaeac08e4c34ba8153fca99b3df4"
     }
   ],
   "ground_truth": {
@@ -122,9 +111,9 @@
   "fault_records": [
     {
       "fault": "bad_column_lookup",
-      "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -5,6 +5,7 @@\n \n import numpy as np\n import pandas as pd\n+_qty_check = pd.read_csv(__import__('os').environ['DATA_PATH'])['qty']  # TEST FAULT\n import matplotlib\n \n matplotlib.use(\"Agg\")",
-      "original_hash": "88e0e2308fe4",
-      "mutated_hash": "d43e36c85e84"
+      "diff": "--- original (Coder's own output)\n+++ executed (after test-only mutation)\n@@ -4,6 +4,7 @@\n \n import numpy as np\n import pandas as pd\n+_qty_check = pd.read_csv(__import__('os').environ['DATA_PATH'])['qty']  # TEST FAULT\n import matplotlib\n \n matplotlib.use(\"Agg\")",
+      "original_hash": "df9e0e520415",
+      "mutated_hash": "30c643cc4d8f"
     }
   ]
 }

@@ -85,3 +85,36 @@ def test_each_contract_violation_is_reported(patch, needle):
 def test_oversized_fact_list_is_bounded():
     many = {"answer_facts": [{"label": f"l{i}", "value": i, "unit": ""} for i in range(500)]}
     assert any("too many" in p for p in check(many))
+
+
+def _chart(data):
+    return {**GOOD, "charts": [{**GOOD["charts"][0], "data": data}]}
+
+
+def test_chart_data_is_optional_and_valid_data_passes():
+    ok = {"categories": ["A", "B"], "series": [{"name": "Aug", "values": [1, 2.5]}]}
+    assert check(_chart(ok)) == []
+
+
+@pytest.mark.parametrize(
+    ("data", "needle"),
+    [
+        ("x", "must be an object"),
+        ({"categories": [], "series": []}, "categories"),
+        ({"categories": ["A", ""], "series": [{"name": "s", "values": [1, 2]}]}, "non-empty"),
+        ({"categories": ["A"], "series": []}, "series must"),
+        ({"categories": ["A", "B"], "series": [{"name": "s", "values": [1]}]}, "match categories"),
+        ({"categories": ["A"], "series": [{"name": "s", "values": ["1"]}]}, "finite numbers"),
+        ({"categories": ["A"], "series": [{"name": "s", "values": [True]}]}, "finite numbers"),
+        ({"categories": ["A"], "series": [{"values": [1]}]}, "string name"),
+        (
+            {
+                "categories": [f"c{i}" for i in range(61)],
+                "series": [{"name": "s", "values": [0] * 61}],
+            },
+            "1-60",
+        ),
+    ],
+)
+def test_chart_data_violations_are_reported(data, needle):
+    assert any(needle in p for p in check(_chart(data)))

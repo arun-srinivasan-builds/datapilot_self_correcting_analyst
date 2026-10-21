@@ -38,6 +38,12 @@ def main() -> None:
         initial_sidebar_state="collapsed",
     )
     configure_logging()
+    if os.environ.get("DATAPILOT_MODE", "live").lower() == "demo":
+        # Public site: one guided page over recorded runs (the admin workspaces stay private).
+        from datapilot.ui import demo_page
+
+        demo_page.render()
+        return
     inject_theme()
     init_state()
     render_rail()

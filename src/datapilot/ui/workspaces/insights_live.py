@@ -14,7 +14,6 @@ import streamlit as st
 
 from datapilot.events import EventType, reduce_events
 from datapilot.reports.pdf import ChartImage, build_pdf
-from datapilot.ui import demo
 from datapilot.ui import markup as h
 from datapilot.ui.chrome import common_chips
 from datapilot.ui.live import LiveSession, RunView, results_payload
@@ -86,11 +85,6 @@ def _trail(view: RunView) -> list[tuple[str, str]]:
 
 
 def render_live(live: LiveSession, view: RunView) -> None:
-    is_demo = demo.is_demo()
-    if is_demo:
-        st.markdown(h.banner(demo.DEMO_NOTICE), unsafe_allow_html=True)
-        demo.picker()
-        view = live.latest_view() or view
     rec = view.record
     canvas = reduce_events(view.events)
     chips = common_chips(st.session_state.get("loaded"))
@@ -187,12 +181,10 @@ def render_live(live: LiveSession, view: RunView) -> None:
             )
         st.markdown(h.pane_header("Exports"), unsafe_allow_html=True)
         _exports(view, facts, charts)
-        if not is_demo:
-            _reproduce(live, view)
+        _reproduce(live, view)
 
-    if not is_demo:
-        _decision(live, view, canvas.phase == "approved")
-        _follow_up(live, view)
+    _decision(live, view, canvas.phase == "approved")
+    _follow_up(live, view)
 
 
 def _exports(view: RunView, facts: list[dict[str, Any]], charts: list[dict[str, Any]]) -> None:
@@ -219,11 +211,7 @@ def _exports(view: RunView, facts: list[dict[str, Any]], charts: list[dict[str, 
             "reviewer_status": f"Approved (message {rec.messages}/12)",
             "human_status": _human_label(view),
             "run_id": rec.run_id,
-            "dataset_name": str(
-                (st.session_state.get("source") or {}).get(
-                    "name", "sales_sample.csv" if demo.is_demo() else "dataset"
-                )
-            ),
+            "dataset_name": str((st.session_state.get("source") or {}).get("name", "dataset")),
             "messages": rec.messages,
         },
     )

@@ -34,7 +34,10 @@ Rules:
   the file is an Excel workbook and that is the sheet to read; otherwise it is a CSV.
 - Write every output into the directory os.environ["OUTPUT_DIR"]: charts as PNG, and a file
   results.json with {{"answer_facts": [{{"label": str, "value": number or str, "unit": str}}],
-  "charts": [{{"file": str, "title": str, "x_label": str, "y_label": str, "unit": str}}]}}.
+  "charts": [{{"file": str, "title": str, "x_label": str, "y_label": str, "unit": str,
+  "data": {{"categories": [str], "series": [{{"name": str, "values": [number]}}]}}}}]}}.
+  For every chart, "data" holds exactly the numbers plotted (one value per category in each
+  series, plain numbers, at most 40 categories and 4 series) so the chart can be redrawn.
 - Use only pandas, numpy, matplotlib (call matplotlib.use("Agg") first), json, os, pathlib, math,
   datetime. No network, no subprocess, no reading other files or environment variables.
 - Every chart needs a title, labelled axes and units. Print the key numbers to stdout.
@@ -50,7 +53,7 @@ You see the question, the plan, the code and the Executor's output. Check:
 1. The answer addresses the question asked and every number comes from the Executor's output.
 2. Calculations are plausible given the data profile (no wrong grouping, double counting, or
    silently dropped rows).
-3. Every chart has a title, labelled axes and units.
+3. Every chart has a title, labelled axes and units, and its "data" matches what is plotted.
 4. The code obeys the Coder rules (one block, only allowed libraries, outputs to OUTPUT_DIR).
 If the last execution failed, do not approve: say briefly what failed.
 If everything is correct, reply with a short confirmation, then put the single word APPROVED alone

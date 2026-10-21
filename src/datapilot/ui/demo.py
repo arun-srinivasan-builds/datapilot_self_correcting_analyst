@@ -1,9 +1,8 @@
 """Public demo mode: replays RECORDED real runs (captured from live gpt-6-luna + sandbox executions).
 
 Nothing here calls a model or the sandbox, and nothing is simulated: every event, number and chart
-was produced by a real run and saved by `scripts/live_demo.py` (see demo_data/*/summary.json). The UI
-labels this clearly as a recorded run. `DemoSession` mirrors the read-only part of `LiveSession`, so
-the Livewire and Insights workspaces render the same way for live and recorded runs.
+was produced by a real run and saved by `scripts/live_demo.py` (see demo_data/*/summary.json). The public page
+(demo_page.py) labels this clearly as a recorded run.
 """
 
 from __future__ import annotations
@@ -19,7 +18,7 @@ import streamlit as st
 from datapilot.agents.termination import RunOutcome
 from datapilot.events import EventType, RuntimeEvent
 from datapilot.session import ArtifactRef, RunRecord
-from datapilot.ui.live import LiveUnavailableError, RunView
+from datapilot.ui.live import RunView
 
 DEMO_DIR = Path(
     os.environ.get("DATAPILOT_DEMO_DIR", Path(__file__).resolve().parents[3] / "demo_data")
@@ -29,10 +28,6 @@ LABELS = {
     "normal-run": "Normal run — approved first time",
     "fault-injection": "Test fault — real error, autonomous repair",
 }
-DEMO_NOTICE = (
-    "RECORDED REAL RUN — captured from a live gpt-6-luna run executed in the isolated sandbox. "
-    "This public site cannot start analyses; the private live site can."
-)
 
 
 def is_demo() -> bool:
@@ -113,58 +108,3 @@ def recorded_runs() -> dict[str, RunView]:
         if view is not None:
             views[name] = view
     return views
-
-
-class DemoSession:
-    """Read-only stand-in for `LiveSession`: never starts a run, never touches a model or sandbox."""
-
-    is_demo = True
-    running = False
-    error: str | None = None
-    session = None
-
-    def __init__(self) -> None:
-        runs = recorded_runs()
-        self.views = {v.record.run_id: v for v in runs.values()}
-        self.keys = {k: v.record.run_id for k, v in runs.items()}
-        self.order = list(self.views)
-        self.control = None
-
-    @property
-    def selected_key(self) -> str:
-        key = st.session_state.get("demo_run")
-        return key if key in self.keys else next(iter(self.keys), "")
-
-    @property
-    def current_run_id(self) -> str | None:
-        return self.keys.get(self.selected_key)
-
-    def events(self, run_id: str | None = None) -> tuple[RuntimeEvent, ...]:
-        view = self.views.get(run_id or self.current_run_id or "")
-        return view.events if view else ()
-
-    def latest_view(self) -> RunView | None:
-        return self.views.get(self.current_run_id or "")
-
-    def ask(self, *_: Any, **__: Any) -> None:
-        raise LiveUnavailableError("Demo site: analyses are recorded. Use the private live site.")
-
-    def stop(self) -> None:  # pragma: no cover - never running
-        return None
-
-    def decide(self, *_: Any, **__: Any) -> str:
-        return "Human decisions are disabled on the demo site."
-
-    def verify(self, *_: Any, **__: Any) -> None:
-        return None
-
-
-def picker() -> None:
-    """Segmented control that chooses which recorded run to show."""
-    st.segmented_control(
-        "Recorded run",
-        list(LABELS),
-        format_func=LABELS.get,
-        key="demo_run",
-        default=next(iter(LABELS)),
-    )

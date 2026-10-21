@@ -14,6 +14,8 @@ import math
 from collections.abc import Collection
 
 MAX_FACTS = 200
+MAX_CATEGORIES = 60
+MAX_SERIES = 6
 CHART_FIELDS = ("file", "title", "x_label", "y_label", "unit")
 
 
@@ -84,4 +86,33 @@ def _check_charts(charts: list[object], artifacts: set[str]) -> list[str]:
         file = chart.get("file")
         if isinstance(file, str) and file not in artifacts:
             problems.append(f"charts[{i}].file '{file}' was not written to OUTPUT_DIR")
+        if "data" in chart:
+            problems += _check_chart_data(i, chart["data"])
+    return problems
+
+
+def _check_chart_data(i: int, data: object) -> list[str]:
+    """Optional machine-readable series behind a chart (lets a UI redraw it natively)."""
+    where = f"charts[{i}].data"
+    if not isinstance(data, dict):
+        return [f"{where} must be an object"]
+    cats, series = data.get("categories"), data.get("series")
+    if not isinstance(cats, list) or not 1 <= len(cats) <= MAX_CATEGORIES:
+        return [f"{where}.categories must be a list of 1-{MAX_CATEGORIES} labels"]
+    if not all(isinstance(c, str) and c.strip() for c in cats):
+        return [f"{where}.categories must be non-empty strings"]
+    if not isinstance(series, list) or not 1 <= len(series) <= MAX_SERIES:
+        return [f"{where}.series must be a list of 1-{MAX_SERIES} series"]
+    problems: list[str] = []
+    for j, s in enumerate(series):
+        values = s.get("values") if isinstance(s, dict) else None
+        if not isinstance(s, dict) or not isinstance(s.get("name"), str):
+            problems.append(f"{where}.series[{j}] needs a string name")
+        elif not isinstance(values, list) or len(values) != len(cats):
+            problems.append(f"{where}.series[{j}].values must match categories in length")
+        elif not all(
+            isinstance(v, int | float) and not isinstance(v, bool) and math.isfinite(v)
+            for v in values
+        ):
+            problems.append(f"{where}.series[{j}].values must be finite numbers")
     return problems

@@ -11,7 +11,6 @@ from html import escape
 import streamlit as st
 
 from datapilot.events import EventType, RuntimeEvent
-from datapilot.ui import demo
 from datapilot.ui import markup as h
 from datapilot.ui.chrome import common_chips
 from datapilot.ui.live import get_live
@@ -107,23 +106,6 @@ def outcome(canvas: Canvas) -> tuple[str, str, str]:
     return ("run", "Run in progress", "The counter counts only real agent messages.")
 
 
-def _replay(events: tuple[RuntimeEvent, ...]) -> tuple[RuntimeEvent, ...]:
-    """Demo site: pick a recorded run and step through its real events (no timers)."""
-    st.markdown(h.banner(demo.DEMO_NOTICE), unsafe_allow_html=True)
-    demo.picker()
-    if len(events) < 2:
-        return events
-    upto = st.slider(
-        "Replay: show events up to",
-        1,
-        len(events),
-        len(events),
-        key=f"replay-{events[0].run_id}",
-        help="Drag to step through the recorded run, one real event at a time.",
-    )
-    return events[:upto]
-
-
 def _tokens_label(events: tuple[RuntimeEvent, ...]) -> str:
     total = sum(
         int(e.payload.get("input_tokens", 0)) + int(e.payload.get("output_tokens", 0))
@@ -147,8 +129,6 @@ def _body() -> None:
     is_live = live.current_run_id is not None
     key = None if is_live else st.session_state.get("preview_key")
     events = live.events() if is_live else events_for(key, st.session_state.get("human"))
-    if is_live and demo.is_demo():
-        events = _replay(events)
     if st.session_state.get("lw_was_running") and not live.running:
         live.latest_view()  # collect the finished run, then refresh every workspace once
         st.session_state["lw_was_running"] = False

@@ -205,3 +205,16 @@ Authorized by the user: live `gpt-6-luna` calls (existing `.env` key), run throu
 - F3: with the Streamlit app, `LiveSession` is held in `st.session_state` and the broker subprocess is started on demand from the app; both survive reruns but not a server restart.
 
 **Gate (2026-10-21):** `pytest -m "not live"`: 405 passed + 2 architecture-boundary tests rewritten and re-run green (the UI boundary moved: only `ui/live.py` may import agent/sandbox code, and no UI source may reference fault injection); coverage 88% over `src/datapilot` + `sandbox_service`; `pytest -m live tests/live`: 5/5; Ruff check + format and `pip check` clean. Not done: M7 (VPS inspection, Docker app image, Traefik, deploy), formal REVIEW-AGENT report, user visual sign-off, accessibility audit, a re-run of the whole suite after the last lint-only edits.
+
+## Public demo redesign (2026-10-21)
+Request: the non-admin page must be easy for anyone to understand, look premium, say clearly what to check, show an animated workflow and premium charts; the admin page must not change.
+
+| Item | Result |
+|---|---|
+| Page | `DATAPILOT_MODE=demo` now renders one guided page (`ui/demo_page.py`, `static/demo.css`): plain-English hero, 4 numbered steps (question, watch the team, answer, why trust it), recording picker (Run A smooth, Run B watch a mistake get fixed), answer card, key figures, charts, trust checklist ("what to check and how"), downloads (analysis.py, one-page PDF, PNG) |
+| Animated workflow | `ui/demo_flow.py` (self-contained HTML/JS iframe): four agents, a packet moving between them, red dashed loop-back on crash/feedback, real elapsed time per step, play/pause/back/next/speed/scrubber, auto-starts when scrolled into view, step list, 2x2 layout on phones, reduced-motion respected. Frames come only from real events (`ui/demo_frames.py`); text is set via textContent and JSON is escaped |
+| Premium charts | `ui/demo_charts.py`: native Plotly (rounded bars, diverging red/teal with the biggest fall highlighted, compact labels, hover values, one-line takeaway). Needs series data, so the results contract gained optional `charts[i].data` (categories + series, validated, 12 new tests) and the Coder/Reviewer prompts ask for it |
+| Re-recorded demo runs | Both runs re-recorded live with the new prompt: Run A approved at 4/12 (1 execution), Run B real KeyError -> repair -> approved at 6/12 (2 executions). Old evidence stays in git history |
+| Admin unchanged | The demo conditionals added earlier to the admin workspaces were removed again; diff of admin files vs the pre-demo commit is only a "TEST FAULT INJECTED" chip (shown only if a fault event exists) and a one-line crash fix. Admin browser tests (4 viewports) pass. Side effect to know: the Coder prompt change applies to live runs too (they now also emit chart data; the admin page ignores it) |
+| Tests | 21 new demo tests + 5 browser tests (4 viewports: no overflow, animation reaches the answer, 2 native charts, Run B crash and repair). Offline suite 284 passed; admin browser suite 4 passed; Ruff/format clean |
+| Not done | Admin site still shows the agents' flat PNG charts (by request, untouched). Full sandbox/integration suite not re-run after the prompt change (scripted tests do not depend on the prompt text) |
