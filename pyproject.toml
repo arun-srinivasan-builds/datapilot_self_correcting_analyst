@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datapilot"
+version = "0.2.0"
+description = "DataPilot - self-correcting data analyst (AutoGen learning assignment)"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "autogen-agentchat==0.7.5",
+    "autogen-core==0.7.5",
+    "autogen-ext[openai]==0.7.5",
+    "openai==3.31.0",
+    "httpx==0.28.1",
+    "pydantic==2.14.1",
+    "pydantic-settings==2.16.0",
+    "pandas==3.0.6",
+    "numpy==2.4.6",
+    "openpyxl==3.1.5",
+    "matplotlib==3.11.2",
+    "plotly==7.1.0",
+    "reportlab==5.0.1",
+    "streamlit==1.66.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "pytest-asyncio==1.4.0",
+    "pytest-cov==7.1.0",
+    "ruff==0.17.0",
+    "playwright==1.64.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-ra"
+markers = [
+    "live: needs OPENAI_API_KEY and a real model (never in the default gate)",
+    "sandbox: needs a container runtime",
+    "ui: browser/viewport checks (Playwright)",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = [".venv", "*.md", "docs/evidence"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S", "T20"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+"scripts/**" = ["E402"]
+"fixtures/**" = ["S311"]
+"docs/mockups/**" = ["E501", "E731", "T201", "S", "B", "UP"]
+"src/datapilot/ui/**" = ["E501"]
+"docs/screens/**" = ["E501"]
+"tests/ui/**" = ["E501", "S101", "S603", "S310"]
+"sandbox_service/**" = ["S603", "S607"]
+"tests/sandbox/**" = ["S101", "S603", "S607", "S108", "E501"]
+"tests/integration/**" = ["S101", "S603", "S607", "S108", "E501"]

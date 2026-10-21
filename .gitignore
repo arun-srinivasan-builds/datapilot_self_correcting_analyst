@@ -1,0 +1,35 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Runtime data
+sessions/
+.sandbox/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.coverage
+htmlcov/
+
+# Local/live artefacts
+.sandbox-live/
+datapilot-vps-report.txt
+
+# Large generated review PDFs (regenerable from the HTML beside them)
+docs/mockups/review/*.pdf
+docs/mockups/review-light/*.pdf
+docs/screens/m2/*.pdf
+docs/SocialEagle_UseCase_Definitions.pdf

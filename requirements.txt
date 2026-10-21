@@ -1,0 +1,15 @@
+# Runtime dependencies, pinned (Python 3.11). Keep in sync with pyproject.toml.
+autogen-agentchat==0.7.5
+autogen-core==0.7.5
+autogen-ext[openai]==0.7.5
+openai==3.31.0
+httpx==0.28.1
+pydantic==2.14.1
+pydantic-settings==2.16.0
+pandas==3.0.6
+numpy==2.4.6
+openpyxl==3.1.5
+matplotlib==3.11.2
+plotly==7.1.0
+reportlab==5.0.1
+streamlit==1.66.0

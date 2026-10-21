@@ -1,0 +1,19 @@
+[server]
+headless = true
+maxUploadSize = 25
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+showSidebarNavigation = false
+
+[theme]
+base = "light"
+primaryColor = "#077A86"
+backgroundColor = "#F7F6F2"
+secondaryBackgroundColor = "#E9EDF0"
+textColor = "#233247"
+font = "sans serif"
