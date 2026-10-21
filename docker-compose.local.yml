@@ -1,0 +1,5 @@
+# Local-only override: publishes the app on loopback. Never used on the VPS (port 8501 is taken there).
+services:
+  app:
+    ports:
+      - "127.0.0.1:${APP_PORT:-8501}:8501"
