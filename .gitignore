@@ -33,3 +33,4 @@ docs/mockups/review/*.pdf
 docs/mockups/review-light/*.pdf
 docs/screens/m2/*.pdf
 docs/SocialEagle_UseCase_Definitions.pdf
+*.tar.gz
