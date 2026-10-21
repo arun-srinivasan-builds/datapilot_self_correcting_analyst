@@ -16,12 +16,18 @@ class BrokerClient:
     def __init__(self, base_url: str, token: str, *, request_margin_s: float = 20.0) -> None:
         if not token:
             raise SandboxUnavailableError("SANDBOX_TOKEN is not configured")
+        self._uds: str | None = None
+        if base_url.startswith("unix://"):
+            self._uds = base_url.removeprefix("unix://")
+            base_url = "http://broker"  # Host header the broker expects over the socket
         self._base = base_url.rstrip("/")
         self._headers = {"Authorization": f"Bearer {token}"}
         self._margin = request_margin_s
 
     def _client(self, timeout: float) -> httpx.AsyncClient:
+        transport = httpx.AsyncHTTPTransport(uds=self._uds) if self._uds else None
         return httpx.AsyncClient(
+            transport=transport,
             base_url=self._base,
             headers=self._headers,
             timeout=httpx.Timeout(timeout, connect=CONNECT_TIMEOUT),

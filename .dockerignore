@@ -12,10 +12,10 @@ htmlcov
 **/__pycache__
 *.egg-info
 tests
-docs
 PRPs
 agents
 skills
 scripts
 sandbox_service
 datapilot-vps-report.txt
+docs

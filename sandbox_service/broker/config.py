@@ -42,11 +42,25 @@ class BrokerConfig:
     artifact_ttl_s: int = 3600
     dataset_ttl_s: int = 6 * 3600
     container_prefix: str = "dpsbx-"
+    # When set, the broker listens on this Unix socket instead of loopback TCP (VPS design:
+    # the app container mounts only the socket's directory; access = file permissions + token).
+    socket_path: str = ""
+    socket_mode: int = 0o660
+    socket_group: str = ""
 
     def validate(self) -> None:
         if len(self.token) < MIN_TOKEN_LENGTH:
             raise ConfigError(f"SANDBOX_TOKEN must be at least {MIN_TOKEN_LENGTH} characters")
-        if self.host not in LOOPBACK_HOSTS:
+        if self.socket_path:
+            if not self.socket_path.startswith("/") or any(
+                c in self.socket_path for c in ",\"'\n "
+            ):
+                raise ConfigError(
+                    "SANDBOX_SOCKET must be an absolute path without spaces or quotes"
+                )
+            if self.socket_mode & 0o007:
+                raise ConfigError("the socket must not be accessible to others (mode & 0o007)")
+        elif self.host not in LOOPBACK_HOSTS:
             raise ConfigError(f"broker binds loopback only ({LOOPBACK_HOSTS}), got {self.host!r}")
         ipaddress.ip_address(self.host)
         if not 0 <= self.port <= 65535:  # 0 = ephemeral (tests)
@@ -66,6 +80,13 @@ class BrokerConfig:
             port=int(env.get("SANDBOX_PORT", "8765")),
             default_timeout_s=int(env.get("SANDBOX_TIMEOUT_SECONDS", "60")),
             max_dataset_bytes=int(env.get("MAX_UPLOAD_MB", "25")) * MB,
+            socket_path=env.get("SANDBOX_SOCKET", ""),
+            **(
+                {"lock_path": Path(env["SANDBOX_IMAGE_LOCK"])}
+                if env.get("SANDBOX_IMAGE_LOCK")
+                else {}
+            ),
+            socket_group=env.get("SANDBOX_SOCKET_GROUP", ""),
         )
         cfg.validate()
         return cfg

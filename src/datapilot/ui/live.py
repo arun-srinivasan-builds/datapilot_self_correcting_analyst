@@ -118,6 +118,8 @@ def runtime() -> Runtime:
 
 def readiness(settings: Settings | None = None) -> str | None:
     """Why a live run cannot start right now, or None when it can."""
+    if os.environ.get("DATAPILOT_MODE", "live").lower() == "demo":
+        return "Demo site: runs are recorded real runs. Use the private live site to analyse."
     s = settings or get_settings()
     if not s.has_api_key:
         return "OPENAI_API_KEY is not configured in .env."
@@ -279,6 +281,10 @@ class LiveSession:
 
 def get_live() -> LiveSession:
     ss = st.session_state
+    if os.environ.get("DATAPILOT_MODE", "live").lower() == "demo":
+        from datapilot.ui.demo import DemoSession
+
+        return DemoSession()  # type: ignore[return-value]
     if "live" not in ss:
         ss["live"] = LiveSession(runtime(), get_settings())
     return ss["live"]

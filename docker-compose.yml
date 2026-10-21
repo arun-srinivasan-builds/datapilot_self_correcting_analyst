@@ -1,30 +1,82 @@
-# DataPilot app service. The sandbox broker is a SEPARATE host service (PRP decision D11): the app
-# container gets neither the Docker socket nor any runtime access, only the broker's HTTP API.
+# DataPilot behind the EXISTING Traefik (the one started by the n8n stack), same pattern as ReviewLens.
+#   datapilot.arunsrinivasan.io        public demo: replays RECORDED real runs, no key, no sandbox
+#   datapilot-admin.arunsrinivasan.io  live analysis, password (Traefik basic auth)
 #
-# Local test (Docker Desktop):  docker compose -f docker-compose.yml -f docker-compose.local.yml up --build
-#                               -> http://localhost:8501 (the base file publishes NO ports, like the VPS)
-# The broker must be running on the host; SANDBOX_URL points the container at it.
-# VPS: routing labels, network and domain are added only after the read-only VPS inspection and
-# approval (see docs/DEPLOY.md). Nothing here touches Traefik or other stacks.
-services:
-  app:
-    build: .
-    image: datapilot:${IMAGE_TAG:-dev}
-    env_file: .env # OPENAI_API_KEY, SANDBOX_TOKEN ... never baked into the image
-    environment:
-      SANDBOX_URL: ${SANDBOX_URL:-http://host.docker.internal:8765}
-      APP_ENV: production
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
-    volumes:
-      - artifacts:/data
-    restart: unless-stopped
-    read_only: true
-    tmpfs:
-      - /tmp:size=256m
-    cap_drop: [ALL]
-    security_opt:
-      - no-new-privileges:true
+# No ports are published; Traefik terminates TLS and routes by hostname. Neither container has the
+# Docker socket: generated code only runs in the host-level sandbox broker (deploy/), which the live
+# container reaches through a group-restricted Unix socket.
+# Required in ./.env (live container reads the whole file; compose reads ADMIN_* and SANDBOX_GID):
+#   OPENAI_API_KEY, OPENAI_MODEL, SANDBOX_TOKEN, MAX_RUN_TOKENS,
+#   ADMIN_USER, ADMIN_PASSWORD_HASH='$2a$...'  (bcrypt, single quotes), SANDBOX_GID=<gid of dpsandbox>
 
-volumes:
-  artifacts: {}
+x-app-hardening: &app-hardening
+  image: datapilot:latest
+  restart: unless-stopped
+  read_only: true
+  tmpfs:
+    - /tmp
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  networks:
+    - n8n_default
+
+services:
+  demo:
+    <<: *app-hardening
+    build: .
+    container_name: datapilot-demo
+    # Deliberately NO env_file: this container never receives the OpenAI key or the sandbox token.
+    environment:
+      DATAPILOT_MODE: demo
+      DATAPILOT_DEMO_DIR: /app/demo_data
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: n8n_default
+      traefik.http.routers.datapilot-demo.rule: Host(`datapilot.arunsrinivasan.io`)
+      traefik.http.routers.datapilot-demo.entrypoints: websecure
+      traefik.http.routers.datapilot-demo.tls: "true"
+      traefik.http.routers.datapilot-demo.tls.certresolver: mytlschallenge
+      traefik.http.routers.datapilot-demo.middlewares: datapilot-headers@docker
+      traefik.http.services.datapilot-demo.loadbalancer.server.port: "8501"
+      # shared security headers
+      traefik.http.middlewares.datapilot-headers.headers.frameDeny: "true"
+      traefik.http.middlewares.datapilot-headers.headers.contentTypeNosniff: "true"
+      traefik.http.middlewares.datapilot-headers.headers.referrerPolicy: no-referrer
+      traefik.http.middlewares.datapilot-headers.headers.stsSeconds: "31536000"
+
+  live:
+    <<: *app-hardening
+    container_name: datapilot-live
+    env_file:
+      - .env # OPENAI_API_KEY, OPENAI_MODEL, SANDBOX_TOKEN and limits
+    environment:
+      DATAPILOT_MODE: live
+      APP_ENV: production
+      SANDBOX_URL: unix:///run/datapilot-sandbox/broker.sock
+    # Only the broker's socket directory is mounted; membership of its group is the access control.
+    volumes:
+      - /run/datapilot-sandbox:/run/datapilot-sandbox
+    group_add:
+      - "${SANDBOX_GID:?set SANDBOX_GID in .env (gid of the dpsandbox group)}"
+    depends_on:
+      - demo # shares the image built by the demo service
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: n8n_default
+      traefik.http.routers.datapilot-live.rule: Host(`datapilot-admin.arunsrinivasan.io`)
+      traefik.http.routers.datapilot-live.entrypoints: websecure
+      traefik.http.routers.datapilot-live.tls: "true"
+      traefik.http.routers.datapilot-live.tls.certresolver: mytlschallenge
+      # password first, then request-size cap, then headers
+      traefik.http.routers.datapilot-live.middlewares: datapilot-auth@docker,datapilot-limit@docker,datapilot-headers@docker
+      traefik.http.services.datapilot-live.loadbalancer.server.port: "8501"
+      traefik.http.middlewares.datapilot-auth.basicauth.users: ${ADMIN_USER}:${ADMIN_PASSWORD_HASH}
+      traefik.http.middlewares.datapilot-auth.basicauth.removeheader: "true"
+      # slightly above the app's 25 MB upload limit; the app enforces the exact cap
+      traefik.http.middlewares.datapilot-limit.buffering.maxRequestBodyBytes: "27262976"
+
+networks:
+  n8n_default:
+    external: true

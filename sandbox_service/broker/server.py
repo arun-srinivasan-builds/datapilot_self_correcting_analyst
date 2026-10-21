@@ -12,8 +12,11 @@ from __future__ import annotations
 import hmac
 import json
 import logging
+import os
 import re
 import socket
+import socketserver
+import stat
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from typing import Any
 from urllib.parse import parse_qs, urlsplit
@@ -41,21 +44,53 @@ class ApiError(Exception):
         self.status, self.code, self.message = status, code, message or code
 
 
+def _remove_stale_socket(path: str) -> None:
+    """Remove only a leftover socket file (never a regular file or directory)."""
+    try:
+        if stat.S_ISSOCK(os.stat(path).st_mode):
+            os.unlink(path)
+    except FileNotFoundError:
+        pass
+
+
+def _secure_socket(cfg: BrokerConfig) -> None:
+    """Group-shared, never world-accessible: only the app's group can connect."""
+    if cfg.socket_group:
+        import grp
+
+        os.chown(cfg.socket_path, -1, grp.getgrnam(cfg.socket_group).gr_gid)
+    os.chmod(cfg.socket_path, cfg.socket_mode)
+
+
 class BrokerServer(ThreadingHTTPServer):
     daemon_threads = True
     allow_reuse_address = False
 
     def __init__(self, cfg: BrokerConfig, manager: RunManager) -> None:
         self.cfg, self.manager = cfg, manager
+        if cfg.socket_path:
+            self.address_family = socket.AF_UNIX
+            _remove_stale_socket(cfg.socket_path)
+            super().__init__(cfg.socket_path, Handler)
+            _secure_socket(cfg)
+            self.allowed_hosts = {"broker"}  # the client sends Host: broker over the socket
+            return
         if cfg.host == "::1":
             self.address_family = socket.AF_INET6
         super().__init__((cfg.host, cfg.port), Handler)
         port = self.server_address[1]
         self.allowed_hosts = {f"127.0.0.1:{port}", f"localhost:{port}", f"[::1]:{port}"}
 
+    def server_bind(self) -> None:
+        if self.address_family == getattr(socket, "AF_UNIX", None):
+            socketserver.TCPServer.server_bind(self)  # no hostname lookup for a path
+            self.server_name, self.server_port = "broker", 0
+        else:
+            super().server_bind()
+
     @property
     def port(self) -> int:
-        return int(self.server_address[1])
+        return 0 if self.cfg.socket_path else int(self.server_address[1])
 
 
 def validate_run_request(body: Any, cfg: BrokerConfig) -> dict[str, Any]:

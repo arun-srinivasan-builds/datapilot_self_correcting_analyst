@@ -1,5 +1,19 @@
-# Local-only override: publishes the app on loopback. Never used on the VPS (port 8501 is taken there).
+# Local rehearsal on Docker Desktop (never used on the VPS). Needs:  docker network create n8n_default
+#   docker compose -f docker-compose.yml -f docker-compose.local.yml up --build demo
+#   demo -> http://localhost:8531   (recorded runs; no key needed)
+# The live service needs the Linux host socket, so locally use the TCP broker instead:
+#   start the broker on the host (loopback), then
+#   docker compose -f docker-compose.yml -f docker-compose.local.yml up live  -> http://localhost:8532
 services:
-  app:
+  demo:
     ports:
-      - "127.0.0.1:${APP_PORT:-8501}:8501"
+      - "127.0.0.1:8531:8501"
+  live:
+    ports:
+      - "127.0.0.1:8532:8501"
+    environment:
+      SANDBOX_URL: http://host.docker.internal:8765
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes: !override []
+    group_add: !override []

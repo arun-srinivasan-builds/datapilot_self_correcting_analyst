@@ -1,0 +1,127 @@
+{
+  "demo": "normal",
+  "run_id": "s41449c09-r1",
+  "outcome": "REVIEWER_APPROVED",
+  "reviewer_approved": true,
+  "messages": 4,
+  "tokens": {
+    "input": 6064,
+    "output": 4356
+  },
+  "usage_by_source": {
+    "Planner": {
+      "input_tokens": 1018,
+      "output_tokens": 605,
+      "calls": 1
+    },
+    "Coder": {
+      "input_tokens": 1461,
+      "output_tokens": 3392,
+      "calls": 1
+    },
+    "Reviewer": {
+      "input_tokens": 3585,
+      "output_tokens": 359,
+      "calls": 1
+    }
+  },
+  "exec_count": 1,
+  "code_hashes": [
+    "36f2aa277925"
+  ],
+  "facts": [
+    {
+      "label": "Comparison year",
+      "value": 2026,
+      "unit": "year"
+    },
+    {
+      "label": "Exact duplicate rows removed",
+      "value": 59,
+      "unit": "rows"
+    },
+    {
+      "label": "Category with largest August-to-September revenue drop",
+      "value": "Electronics",
+      "unit": "category"
+    },
+    {
+      "label": "Largest category revenue drop",
+      "value": 3824783.3499999978,
+      "unit": "currency units (Augu"
+    },
+    {
+      "label": "Region with largest August-to-September revenue drop",
+      "value": "South",
+      "unit": "region"
+    },
+    {
+      "label": "Largest region revenue drop",
+      "value": 6018767.949999999,
+      "unit": "currency units (Augu"
+    },
+    {
+      "label": "Category\u2013region pair with largest August-to-September revenue drop",
+      "value": "Electronics \u2014 South",
+      "unit": "category\u2013region pair"
+    },
+    {
+      "label": "Largest category\u2013region revenue drop",
+      "value": 5398501.0,
+      "unit": "currency units (Augu"
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "results.json",
+      "size": 1870,
+      "sha256": "e3331e849fe6e95e4973be3c315119446a8bc6d2cfc0de822f2bec17bffde4af",
+      "exec_id": "32c40f4de59b456abfb0923be4690d34"
+    },
+    {
+      "name": "revenue_by_category.png",
+      "size": 45723,
+      "sha256": "b333a6f116835c4e8aedfb11199c4161a94ad19afc9ed2a91de4ce10f888cb1c",
+      "exec_id": "32c40f4de59b456abfb0923be4690d34"
+    },
+    {
+      "name": "revenue_by_region.png",
+      "size": 43427,
+      "sha256": "c032295130db90fa4ad91cc85a5413e37f1bdb1007aa1b63d5944572347ab105",
+      "exec_id": "32c40f4de59b456abfb0923be4690d34"
+    },
+    {
+      "name": "revenue_drop_by_category_region.png",
+      "size": 130404,
+      "sha256": "3f80a47337d99e48ca87f5b4d3d2be79e35ebe41f3c181e9f9560e62efe84683",
+      "exec_id": "32c40f4de59b456abfb0923be4690d34"
+    }
+  ],
+  "ground_truth": {
+    "rows": 12480,
+    "total_revenue": 243867533.7,
+    "monthly_revenue": {
+      "2026-06": 59371862.7,
+      "2026-07": 62993962.15,
+      "2026-08": 63145551.15,
+      "2026-09": 58356157.7
+    },
+    "category_change_aug_to_sep": {
+      "Electronics": -3980399.85,
+      "Home": -955938.95,
+      "Apparel": -866800.35,
+      "Grocery": 406901.95,
+      "Beauty": 606843.75
+    },
+    "biggest_drop_category": "Electronics",
+    "biggest_drop_amount": -3980399.85,
+    "region_change_for_that_category": {
+      "South": -5596984.5,
+      "East": 328275.45,
+      "West": 489132.65,
+      "North": 799176.55
+    },
+    "top_region_for_that_drop": "South"
+  },
+  "fault_records": []
+}

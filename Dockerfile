@@ -17,6 +17,7 @@ RUN pip install -r requirements.txt
 COPY .streamlit ./.streamlit
 COPY src ./src
 COPY fixtures ./fixtures
+COPY demo_data ./demo_data
 
 RUN useradd --create-home --uid 10001 app && mkdir -p /data && chown -R app:app /data /app
 USER app

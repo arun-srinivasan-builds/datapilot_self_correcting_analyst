@@ -11,6 +11,7 @@ from datapilot.ingestion import IngestionError
 from datapilot.ingestion.profile import sample_rows
 from datapilot.ui import markup as h
 from datapilot.ui.chrome import common_chips
+from datapilot.ui.demo import is_demo
 from datapilot.ui.live import LiveUnavailableError, get_live, readiness
 from datapilot.ui.state import (
     Loaded,
@@ -287,7 +288,8 @@ def render() -> None:
                 st.rerun()
         if live.error:
             st.error(f"The last run failed to start: {live.error}")
-        st.button("View design preview →", key="to-preview", on_click=_open_preview)
+        if not is_demo():
+            st.button("View design preview →", key="to-preview", on_click=_open_preview)
         if loaded is not None:
             st.markdown(
                 '<div class="eyebrow" style="margin:14px 0 6px;font-size:11px;text-transform:uppercase;'

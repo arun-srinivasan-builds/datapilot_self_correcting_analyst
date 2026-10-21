@@ -11,6 +11,7 @@ from datapilot.agents.usage import PriceTable, UsageTotals
 from datapilot.config import get_settings
 from datapilot.events import EventType
 from datapilot.ui import markup as h
+from datapilot.ui.demo import is_demo
 from datapilot.ui.preview import events_for
 from datapilot.ui.state import Loaded
 
@@ -65,6 +66,8 @@ def common_chips(loaded: Loaded | None) -> list[str]:
         label = f"{d.name} · {len(d.frame):,} rows"
         chips.append(h.chip(label, "info", "hide-m"))
     chips.append(h.chip(s.openai_model, "live", "hide-m"))
+    if is_demo():
+        chips.append(h.chip("RECORDED RUN · DEMO SITE", "preview"))
     key = st.session_state.get("preview_key")
     if key:  # persistent on every workspace while a scripted preview is active
         chips.append(h.chip("DESIGN PREVIEW", "preview"))

@@ -152,6 +152,9 @@ def test_only_ui_live_module_may_import_agent_or_execution_code():
     for path in (ROOT / "src" / "datapilot" / "ui").rglob("*.py"):
         if path.name == "live.py":
             continue
+        allowed = (
+            ("datapilot.agents.termination", "datapilot.session") if path.name == "demo.py" else ()
+        )
         for node in ast.walk(ast.parse(path.read_text(encoding="utf-8"))):
             names = (
                 [a.name for a in node.names]
@@ -160,7 +163,11 @@ def test_only_ui_live_module_may_import_agent_or_execution_code():
                 if isinstance(node, ast.ImportFrom)
                 else []
             )
-            bad = [n for n in names if n.startswith(banned) and n != "datapilot.agents.usage"]
+            bad = [
+                n
+                for n in names
+                if n.startswith(banned) and n != "datapilot.agents.usage" and n not in allowed
+            ]
             if bad:
                 offenders.setdefault(path.name, []).extend(bad)
     assert offenders == {}
